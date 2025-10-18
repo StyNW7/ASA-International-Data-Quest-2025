@@ -4,7 +4,7 @@ Dep. Variable:           Suicide_rate   Pseudo R-squared:              0.08066
 Model:                       QuantReg   Bandwidth:                       3.654
 Method:                 Least Squares   Sparsity:                        11.39
 Date:                Sat, 18 Oct 2025   No. Observations:                  193
-Time:                        16:09:05   Df Residuals:                      189
+Time:                        16:45:15   Df Residuals:                      189
                                         Df Model:                            3
 ======================================================================================
                          coef    std err          t      P>|t|      [0.025      0.975]

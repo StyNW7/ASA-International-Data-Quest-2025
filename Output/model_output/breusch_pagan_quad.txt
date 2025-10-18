@@ -1,0 +1,1 @@
+Breusch-Pagan LM stat: 4.4695, p-value: 0.215, fvalue: 1.4935, f pvalue: 0.2177

@@ -4,7 +4,7 @@ Dep. Variable:           Suicide_rate   R-squared:                       0.052
 Model:                            OLS   Adj. R-squared:                  0.047
 Method:                 Least Squares   F-statistic:                     15.64
 Date:                Sat, 18 Oct 2025   Prob (F-statistic):           0.000108
-Time:                        16:09:05   Log-Likelihood:                -616.76
+Time:                        16:45:15   Log-Likelihood:                -616.76
 No. Observations:                 193   AIC:                             1238.
 Df Residuals:                     191   BIC:                             1244.
 Df Model:                           1                                         

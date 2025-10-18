@@ -1,10 +1,20 @@
+MODEL REPORT - The Price of Progress
+
+
+Data file: Output\merged_clean_panel.csv
+Observations used in quad model: 193
+
+
+=== Quadratic Model (HDI + HDI^2 + log GDP) summary (robust SE) ===
+
+
                             OLS Regression Results                            
 ==============================================================================
 Dep. Variable:           Suicide_rate   R-squared:                       0.070
 Model:                            OLS   Adj. R-squared:                  0.055
 Method:                 Least Squares   F-statistic:                     5.893
 Date:                Sat, 18 Oct 2025   Prob (F-statistic):           0.000726
-Time:                        16:09:05   Log-Likelihood:                -614.93
+Time:                        16:45:19   Log-Likelihood:                -614.93
 No. Observations:                 193   AIC:                             1238.
 Df Residuals:                     189   BIC:                             1251.
 Df Model:                           3                                         
@@ -25,3 +35,40 @@ Kurtosis:                       5.045   Cond. No.                         731.
 
 Notes:
 [1] Standard Errors are heteroscedasticity robust (HC1)
+
+
+=== VIF (quad predictors) ===
+
+
+          variable        VIF
+          HDI_2023  90.150250
+            HDI_sq 106.378520
+log_GDP_per_capita   7.006084
+
+
+=== Breusch-Pagan test (quad) ===
+
+
+Breusch-Pagan LM stat: 4.4695, p-value: 0.215, fvalue: 1.4935, f pvalue: 0.2177
+
+
+=== Bootstrap tipping point CI ===
+
+
+{'n': 500, 'median': np.float64(0.5455938997879175), '2.5%': np.float64(0.17750119011523557), '97.5%': np.float64(0.7060643850959668)}
+
+
+=== Top influencers (Cook's distance) ===
+
+
+         Country Name  cooks_d
+              Eritrea 0.067690
+              Lesotho 0.054295
+             Suriname 0.048842
+              Ukraine 0.044111
+          Korea, Rep. 0.043971
+               Guyana 0.035551
+             Eswatini 0.032568
+            Lithuania 0.020245
+Micronesia, Fed. Sts. 0.019888
+      Solomon Islands 0.016223

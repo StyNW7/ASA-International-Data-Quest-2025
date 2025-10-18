@@ -1,0 +1,27 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           Suicide_rate   R-squared:                       0.091
+Model:                            OLS   Adj. R-squared:                  0.077
+Method:                 Least Squares   F-statistic:                     8.823
+Date:                Sat, 18 Oct 2025   Prob (F-statistic):           1.68e-05
+Time:                        16:45:19   Log-Likelihood:                -600.91
+No. Observations:                 191   AIC:                             1210.
+Df Residuals:                     187   BIC:                             1223.
+Df Model:                           3                                         
+Covariance Type:                  HC1                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept             21.2913      9.075      2.346      0.019       3.504      39.079
+HDI_2023             -39.4083     21.143     -1.864      0.062     -80.848       2.031
+HDI_sq                39.1323     17.545      2.230      0.026       4.745      73.519
+log_GDP_per_capita    -0.6805      0.735     -0.926      0.355      -2.121       0.760
+==============================================================================
+Omnibus:                       43.617   Durbin-Watson:                   1.754
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               71.010
+Skew:                           1.207   Prob(JB):                     3.81e-16
+Kurtosis:                       4.759   Cond. No.                         729.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
