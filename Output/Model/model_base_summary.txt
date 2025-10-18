@@ -1,0 +1,25 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           Suicide_rate   R-squared:                       0.052
+Model:                            OLS   Adj. R-squared:                  0.047
+Method:                 Least Squares   F-statistic:                     15.64
+Date:                Sat, 18 Oct 2025   Prob (F-statistic):           0.000108
+Time:                        16:09:05   Log-Likelihood:                -616.76
+No. Observations:                 193   AIC:                             1238.
+Df Residuals:                     191   BIC:                             1244.
+Df Model:                           1                                         
+Covariance Type:                  HC1                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      1.9288      1.710      1.128      0.259      -1.423       5.281
+HDI_2023       9.1634      2.317      3.954      0.000       4.622      13.705
+==============================================================================
+Omnibus:                       41.330   Durbin-Watson:                   1.788
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               64.929
+Skew:                           1.160   Prob(JB):                     7.96e-15
+Kurtosis:                       4.641   Cond. No.                         10.3
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)

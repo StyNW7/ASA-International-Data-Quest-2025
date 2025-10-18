@@ -1,0 +1,36 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           Suicide_rate   R-squared:                       0.171
+Model:                            OLS   Adj. R-squared:                  0.126
+Method:                 Least Squares   F-statistic:                     6.466
+Date:                Sat, 18 Oct 2025   Prob (F-statistic):           1.65e-08
+Time:                        16:09:05   Log-Likelihood:                -603.77
+No. Observations:                 193   AIC:                             1230.
+Df Residuals:                     182   BIC:                             1265.
+Df Model:                          10                                         
+Covariance Type:                  HC1                                         
+========================================================================================================
+                                           coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------
+Intercept                               13.5126     11.539      1.171      0.242      -9.103      36.128
+C(continent)[T.America]                 -1.1307      1.589     -0.711      0.477      -4.246       1.984
+C(continent)[T.Asia]                    -2.6189      1.335     -1.962      0.050      -5.234      -0.003
+C(continent)[T.Europe]                   2.6412      1.955      1.351      0.177      -1.191       6.473
+C(continent)[T.Oceania]                  2.5802      2.160      1.195      0.232      -1.653       6.814
+C(income_group_auto)[T.Low]             -0.1865      3.866     -0.048      0.962      -7.764       7.391
+C(income_group_auto)[T.Lower-Middle]    -0.4205      2.793     -0.151      0.880      -5.895       5.054
+C(income_group_auto)[T.Upper-Middle]     1.2256      1.939      0.632      0.527      -2.574       5.025
+HDI_2023                               -11.8519     30.364     -0.390      0.696     -71.364      47.660
+HDI_sq                                  14.9422     24.495      0.610      0.542     -33.067      62.952
+log_GDP_per_capita                      -0.5279      0.927     -0.570      0.569      -2.344       1.289
+==============================================================================
+Omnibus:                       62.824   Durbin-Watson:                   1.886
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              140.739
+Skew:                           1.493   Prob(JB):                     2.75e-31
+Kurtosis:                       5.930   Cond. No.                     1.06e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+[2] The condition number is large, 1.06e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

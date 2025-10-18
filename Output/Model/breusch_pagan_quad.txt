@@ -1,0 +1,1 @@
+Breusch-Pagan test Lagrange multiplier stat: 4.4695, p-value: 0.215
