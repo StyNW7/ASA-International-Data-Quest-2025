@@ -1,0 +1,9 @@
+streamlit>=1.22
+pandas
+numpy
+plotly
+statsmodels
+scipy
+seaborn
+matplotlib
+kaleido
