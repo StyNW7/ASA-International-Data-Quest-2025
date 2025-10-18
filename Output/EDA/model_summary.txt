@@ -1,0 +1,27 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           Suicide_rate   R-squared:                       0.070
+Model:                            OLS   Adj. R-squared:                  0.055
+Method:                 Least Squares   F-statistic:                     4.735
+Date:                Sat, 18 Oct 2025   Prob (F-statistic):            0.00329
+Time:                        16:02:23   Log-Likelihood:                -614.93
+No. Observations:                 193   AIC:                             1238.
+Df Residuals:                     189   BIC:                             1251.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept             21.1069     11.087      1.904      0.058      -0.763      42.977
+HDI_2023             -41.4026     26.740     -1.548      0.123     -94.150      11.344
+HDI_sq                37.8075     20.321      1.860      0.064      -2.278      77.893
+log_GDP_per_capita    -0.3835      0.821     -0.467      0.641      -2.003       1.236
+==============================================================================
+Omnibus:                       50.135   Durbin-Watson:                   1.831
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               89.108
+Skew:                           1.313   Prob(JB):                     4.47e-20
+Kurtosis:                       5.045   Cond. No.                         731.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

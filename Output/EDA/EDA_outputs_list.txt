@@ -1,0 +1,13 @@
+Automated EDA run outputs:
+- Summary text: Output\EDA\EDA_summary.txt
+- Correlation heatmap: Output\EDA\heatmap_correlation.png
+- Scatter HDI vs Suicide: Output\EDA\scatter_hdi_suicide.png
+- Scatter log GDP vs Suicide: Output\EDA\scatter_loggdp_suicide.png
+- Boxplot by income group: Output\EDA\boxplot_incomegroup_suicide.png
+- Quadratic model summary: Output\EDA\model_summary.txt
+- Quadratic fit plot: Output\EDA\quadratic_fit.png
+- Choropleth interactive HTML: Output\EDA\choropleth_suicide.html
+
+Notes:
+- Images and model summary are saved in /mnt/data/eda_output.
+- Choropleth is saved as an interactive HTML (open in browser).

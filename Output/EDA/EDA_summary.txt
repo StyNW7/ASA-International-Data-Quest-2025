@@ -1,0 +1,35 @@
+EDA Report - The Price of Progress (automated)
+
+Loaded Output\merged_clean_panel.csv
+
+Total rows: 193
+Unique countries: 193
+
+Columns: Country Name, GDP_per_capita, Suicide_rate, HDI_2023, GDP_per_capita_coverage, Suicide_rate_coverage, Low_data_quality_flag, HDI_sq, log_GDP_per_capita, HDI_2023_lag1, GDP_per_capita_lag1, Suicide_rate_lag1, income_group_auto, ISO3, continent, coverage_frac
+
+
+Descriptive statistics (main variables):
+
+       HDI_2023  GDP_per_capita  Suicide_rate  log_GDP_per_capita
+count   193.000         193.000       193.000             193.000
+mean      0.741       13768.357         8.717               8.687
+std       0.152       18681.653         6.086               1.377
+min       0.388         258.422         0.262               5.555
+25%       0.622        1996.492         4.465               7.599
+50%       0.762        5851.948         7.252               8.675
+75%       0.862       17011.981        12.022               9.742
+max       0.972      107599.576        29.672              11.586
+
+
+Correlation matrix:
+
+                    HDI_2023  GDP_per_capita  Suicide_rate  log_GDP_per_capita
+HDI_2023               1.000           0.690         0.228               0.907
+GDP_per_capita         0.690           1.000         0.186               0.820
+Suicide_rate           0.228           0.186         1.000               0.219
+log_GDP_per_capita     0.907           0.820         0.219               1.000
+
+
+Pearson HDI vs Suicide_rate: r = 0.228, p = 0.0014
+Pearson log(GDP) vs Suicide_rate: r = 0.219, p = 0.0022
+
