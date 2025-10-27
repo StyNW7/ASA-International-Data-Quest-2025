@@ -13,6 +13,7 @@ import seaborn as sns
 from scipy.stats import pearsonr
 import base64
 import time
+from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 st.set_page_config(page_title="The Price of Progress", layout="wide", initial_sidebar_state="expanded")
 sns.set_style("whitegrid")
@@ -27,7 +28,7 @@ def load_data(path=None):
     else:
         # If user doesn't supply file, fallback to try local Output path
         try:
-            df = pd.read_csv("./Output/merged_clean_panel.csv")
+            df = pd.read_csv("../Output/merged_clean_panel.csv")
         except Exception:
             df = None
     return df
@@ -213,6 +214,9 @@ else:
 # -----------------------
 # Residuals and diagnostics
 # -----------------------
+# -----------------------
+# Residuals and diagnostics
+# -----------------------
 st.header("Diagnostics & Robustness")
 col_a, col_b = st.columns(2)
 with col_a:
@@ -220,14 +224,40 @@ with col_a:
     try:
         # compute VIF for HDI, HDI_sq, log GDP
         X = df_f[['HDI_2023','HDI_sq','log_GDP_per_capita']].dropna()
-        Xc = sm.add_constant(X)
-        vif = pd.DataFrame({
-            "variable": Xc.columns,
-            "VIF": [sm.stats.outliers_influence.variance_inflation_factor(Xc.values, i) if Xc.shape[0]>0 else np.nan for i in range(Xc.shape[1])]
-        })
-        st.dataframe(vif.style.format({"VIF":"{:.2f}"}))
+        if X.shape[0] == 0:
+            st.write("Not enough data to compute VIF.")
+        else:
+            Xc = sm.add_constant(X)
+            # Use the directly imported variance_inflation_factor function
+            vif_vals = []
+            for i in range(Xc.shape[1]):
+                try:
+                    vif_i = variance_inflation_factor(Xc.values, i)
+                    vif_vals.append(vif_i)
+                except Exception as e:
+                    st.write(f"Error computing VIF for variable {i}: {e}")
+                    vif_vals.append(np.nan)
+            
+            vif_df = pd.DataFrame({
+                "variable": Xc.columns,
+                "VIF": vif_vals
+            })
+            # Optionally drop const row for clarity
+            vif_df_display = vif_df[vif_df['variable'] != 'const'].copy()
+            st.dataframe(vif_df_display.style.format({"VIF": "{:.2f}"}))
+            
+            # Add interpretation
+            st.markdown("**VIF Interpretation:**")
+            st.markdown("- VIF < 5: Low multicollinearity")
+            st.markdown("- VIF 5-10: Moderate multicollinearity") 
+            st.markdown("- VIF > 10: High multicollinearity")
+            
     except Exception as e:
         st.write("VIF computation error:", e)
+        # Fallback: show correlation matrix instead
+        st.write("As an alternative, here's the correlation matrix:")
+        corr_fallback = X.corr() if 'X' in locals() else df_f[['HDI_2023','HDI_sq','log_GDP_per_capita']].corr()
+        st.dataframe(corr_fallback.style.format("{:.3f}"))
 
 with col_b:
     st.subheader("Top Influential Countries (Cook's D)")
@@ -239,6 +269,18 @@ with col_b:
         tmp['cooks_d'] = cooks
         top = tmp.sort_values('cooks_d', ascending=False).head(10)
         st.table(top)
+        
+        # Add heteroskedasticity test
+        try:
+            _, pval, _, _ = sm.stats.diagnostic.het_breuschpagan(model2.resid, model2.model.exog)
+            st.markdown(f"**Breusch-Pagan test for heteroskedasticity:**")
+            st.markdown(f"p-value = {pval:.4f}")
+            if pval < 0.05:
+                st.markdown("Evidence of heteroskedasticity (p < 0.05)")
+            else:
+                st.markdown("No significant heteroskedasticity (p ≥ 0.05)")
+        except Exception as e:
+            st.write("Could not compute heteroskedasticity test:", e)
     else:
         st.info("No model to compute diagnostics.")
 
