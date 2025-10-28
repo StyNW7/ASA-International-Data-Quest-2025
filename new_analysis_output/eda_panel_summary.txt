@@ -1,0 +1,13 @@
+EDA Summary - merged panel
+Rows: 1175, unique countries: 205
+
+Descriptive stats (HDI, Suicide_rate, GDP_per_capita):
+               HDI  Suicide_rate  GDP_per_capita
+count  1147.000000    411.000000     1143.000000
+mean      0.719885     11.806180    13817.211862
+std       0.153592     41.437746    18734.374936
+min       0.336000      0.770000      258.422077
+25%       0.601000      5.090000     1988.403514
+50%       0.739000      8.010000     5851.948220
+75%       0.838500     13.315000    17011.981288
+max       0.972000    837.000000   107599.576429
