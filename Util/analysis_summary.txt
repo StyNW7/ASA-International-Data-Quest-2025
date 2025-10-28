@@ -1,0 +1,9 @@
+THE PRICE OF PROGRESS - ANALYSIS SUMMARY
+==================================================
+
+DATASET OVERVIEW:
+- Total countries: 205
+- Total observations: 985
+- Time period: 2019 - 2023
+- Average HDI: 0.726
+- Average suicide rate: 10.99 per 100,000
