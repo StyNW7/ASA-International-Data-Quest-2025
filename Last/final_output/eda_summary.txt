@@ -1,0 +1,24 @@
+EDA Summary - final_dataset
+Input file: ./final_unclean.csv
+Rows: 1175, Unique countries (ISO3): 205
+
+Numeric descriptive stats (selected vars):
+               HDI  Suicide_rate  GDP_per_capita  log_GDP_per_capita
+count  1175.000000   1175.000000     1175.000000         1175.000000
+mean      0.719707     11.395953    13600.285533            8.687025
+std       0.152420     42.262763    18522.753447            1.356903
+min       0.336000      0.770000      258.422077            5.554594
+25%       0.604000      4.960000     2076.298886            7.638342
+50%       0.738000      7.860000     5851.948220            8.674530
+75%       0.834500     12.580000    15996.322252            9.679950
+max       0.972000    837.000000   107599.576429           11.586172
+
+Imputation overview (per variable):
+HDI: imputed count = 28 / 1175
+Suicide_rate: imputed count = 764 / 1175
+GDP_per_capita: imputed count = 32 / 1175
+log_GDP_per_capita: imputed count = 32 / 1175
+
+Notes:
+- Imputation methods are encoded in *_imputed_method columns.
+- data_quality_summary column provides quick quality flags.
