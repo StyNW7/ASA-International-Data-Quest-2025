@@ -1,0 +1,27 @@
+FUTURE PREDICTION ANALYSIS SUMMARY
+==================================================
+
+Model Performance:
+- Random Forest: R² = 0.022, MSE = 4315.465
+- Gradient Boosting: R² = 0.002, MSE = 4400.243
+- Linear Regression: R² = 0.157, MSE = 3716.428
+
+Best Model: Linear Regression
+
+Prediction Period: 2024 - 2053
+Countries Analyzed: 205
+Total Predictions: 18450
+
+Key Findings:
+- Baseline 2050 Global Average: 11.82
+- Optimistic vs Pessimistic Difference: 0.74
+
+Highest Risk Countries (Baseline Scenario):
+- Oman: +5.86 (50.5%)
+- Greece: +5.63 (40.4%)
+- Turkey: +5.44 (46.7%)
+- Antigua and Barbuda: +5.35 (52.4%)
+- Slovakia: +5.33 (37.5%)
+- Romania: +5.02 (37.3%)
+- Croatia: +5.00 (34.8%)
+- Hungary: +4.99 (34.7%)
