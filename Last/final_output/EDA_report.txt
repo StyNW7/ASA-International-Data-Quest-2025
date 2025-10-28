@@ -1,0 +1,76 @@
+=== EDA REPORT: THE PRICE OF PROGRESS ===
+
+Rows: 1175, Columns: 23
+
+Variables:
+Country Name, ISO3, Year, log_GDP_per_capita, income_group_auto, continent, Low_data_quality_flag, HDI_sq, Suicide_rate_lag1, HDI_lag1, Low_data_quality_flag_panel, HDI, HDI_imputed, HDI_imputed_method, Suicide_rate, Suicide_rate_imputed, Suicide_rate_imputed_method, GDP_per_capita, GDP_per_capita_imputed, GDP_per_capita_imputed_method, HDI_growth, Suicide_change, Suicide_per_HDI
+
+
+--- Missing Values Summary ---
+
+Country Name                       0
+ISO3                               0
+Year                               0
+log_GDP_per_capita                 0
+income_group_auto                 32
+continent                         32
+Low_data_quality_flag             32
+HDI_sq                             0
+Suicide_rate_lag1                777
+HDI_lag1                         220
+Low_data_quality_flag_panel        0
+HDI                                0
+HDI_imputed                        0
+HDI_imputed_method                 0
+Suicide_rate                       0
+Suicide_rate_imputed               0
+Suicide_rate_imputed_method        0
+GDP_per_capita                     0
+GDP_per_capita_imputed             0
+GDP_per_capita_imputed_method      0
+HDI_growth                       205
+Suicide_change                   205
+Suicide_per_HDI                    0
+dtype: int64
+
+
+--- Correlation Matrix ---
+
+                         HDI  GDP_per_capita  Suicide_rate  log_GDP_per_capita
+HDI                 1.000000        0.695149     -0.040356            0.904527
+GDP_per_capita      0.695149        1.000000     -0.018180            0.818604
+Suicide_rate       -0.040356       -0.018180      1.000000           -0.056763
+log_GDP_per_capita  0.904527        0.818604     -0.056763            1.000000
+
+
+--- Regression Summary ---
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           Suicide_rate   R-squared:                       0.007
+Model:                            OLS   Adj. R-squared:                  0.005
+Method:                 Least Squares   F-statistic:                     9.083
+Date:                Tue, 28 Oct 2025   Prob (F-statistic):           6.04e-06
+Time:                        22:46:39   Log-Likelihood:                -6061.6
+No. Observations:                1175   AIC:                         1.213e+04
+Df Residuals:                    1171   BIC:                         1.215e+04
+Df Model:                           3                                         
+Covariance Type:                  HC1                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept             83.5806     45.936      1.820      0.069      -6.452     173.613
+HDI                 -117.7823     76.036     -1.549      0.121    -266.810      31.246
+HDI_sq               107.5621     62.096      1.732      0.083     -14.143     229.267
+log_GDP_per_capita    -5.2524      3.026     -1.735      0.083     -11.184       0.679
+==============================================================================
+Omnibus:                     2563.573   Durbin-Watson:                   0.664
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          6489584.037
+Skew:                          18.778   Prob(JB):                         0.00
+Kurtosis:                     365.136   Cond. No.                         673.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+
+Estimated HDI tipping point: 0.548

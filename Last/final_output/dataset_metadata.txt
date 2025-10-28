@@ -1,0 +1,8 @@
+cleaning_approach: Ethical preservation with hierarchical imputation
+missing_data_handling: Country -> Regional -> Income group -> Global averages
+data_quality_note: Higher data_quality_score indicates more imputation used
+project_theme: The Price of Progress - HDI, Economic Growth vs Suicide Rates
+timestamp: 2025-10-28 22:45:49
+total_countries: 205
+time_period: 2010-2023
+total_records: 1175
