@@ -1,0 +1,1423 @@
+[
+  {
+    "flagCode": "GL",
+    "country": "Greenland",
+    "SuicideRateCountries_2021": 59.62,
+    "SuicideRateMaleCountries_2021": 86.96,
+    "SuicideRateFemaleCountries_2021": 29.4
+  },
+  {
+    "flagCode": "GY",
+    "country": "Guyana",
+    "SuicideRateCountries_2021": 31.26,
+    "SuicideRateMaleCountries_2021": 52.79,
+    "SuicideRateFemaleCountries_2021": 10.31
+  },
+  {
+    "flagCode": "LT",
+    "country": "Lithuania",
+    "SuicideRateCountries_2021": 27.91,
+    "SuicideRateMaleCountries_2021": 49.96,
+    "SuicideRateFemaleCountries_2021": 9.07
+  },
+  {
+    "flagCode": "KR",
+    "country": "South Korea",
+    "SuicideRateCountries_2021": 25.81,
+    "SuicideRateMaleCountries_2021": 36.96,
+    "SuicideRateFemaleCountries_2021": 14.58
+  },
+  {
+    "flagCode": "RU",
+    "country": "Russia",
+    "SuicideRateCountries_2021": 24.1,
+    "SuicideRateMaleCountries_2021": 41.82,
+    "SuicideRateFemaleCountries_2021": 8.66
+  },
+  {
+    "flagCode": "SR",
+    "country": "Suriname",
+    "SuicideRateCountries_2021": 23.6,
+    "SuicideRateMaleCountries_2021": 37.42,
+    "SuicideRateFemaleCountries_2021": 10.13
+  },
+  {
+    "flagCode": "NR",
+    "country": "Nauru",
+    "SuicideRateCountries_2021": 23.55,
+    "SuicideRateMaleCountries_2021": 35.11,
+    "SuicideRateFemaleCountries_2021": 11.79
+  },
+  {
+    "flagCode": "UA",
+    "country": "Ukraine",
+    "SuicideRateCountries_2021": 23.17,
+    "SuicideRateMaleCountries_2021": 41.4,
+    "SuicideRateFemaleCountries_2021": 7.43
+  },
+  {
+    "flagCode": "UY",
+    "country": "Uruguay",
+    "SuicideRateCountries_2021": 21.31,
+    "SuicideRateMaleCountries_2021": 36.61,
+    "SuicideRateFemaleCountries_2021": 7.23
+  },
+  {
+    "flagCode": "LS",
+    "country": "Lesotho",
+    "SuicideRateCountries_2021": 20.57,
+    "SuicideRateMaleCountries_2021": 32.55,
+    "SuicideRateFemaleCountries_2021": 9.27
+  },
+  {
+    "flagCode": "BY",
+    "country": "Belarus",
+    "SuicideRateCountries_2021": 20.44,
+    "SuicideRateMaleCountries_2021": 35.68,
+    "SuicideRateFemaleCountries_2021": 7.16
+  },
+  {
+    "flagCode": "FM",
+    "country": "Micronesia",
+    "SuicideRateCountries_2021": 20.17,
+    "SuicideRateMaleCountries_2021": 30.72,
+    "SuicideRateFemaleCountries_2021": 9.2
+  },
+  {
+    "flagCode": "MH",
+    "country": "Marshall Islands",
+    "SuicideRateCountries_2021": 20.04,
+    "SuicideRateMaleCountries_2021": 29.01,
+    "SuicideRateFemaleCountries_2021": 10.65
+  },
+  {
+    "flagCode": "LV",
+    "country": "Latvia",
+    "SuicideRateCountries_2021": 19.42,
+    "SuicideRateMaleCountries_2021": 34.67,
+    "SuicideRateFemaleCountries_2021": 6.39
+  },
+  {
+    "flagCode": "SZ",
+    "country": "Eswatini",
+    "SuicideRateCountries_2021": 18.42,
+    "SuicideRateMaleCountries_2021": 31.17,
+    "SuicideRateFemaleCountries_2021": 6.16
+  },
+  {
+    "flagCode": "SB",
+    "country": "Solomon Islands",
+    "SuicideRateCountries_2021": 18.27,
+    "SuicideRateMaleCountries_2021": 27.24,
+    "SuicideRateFemaleCountries_2021": 8.94
+  },
+  {
+    "flagCode": "KZ",
+    "country": "Kazakhstan",
+    "SuicideRateCountries_2021": 18.2,
+    "SuicideRateMaleCountries_2021": 30.96,
+    "SuicideRateFemaleCountries_2021": 6.19
+  },
+  {
+    "flagCode": "ZW",
+    "country": "Zimbabwe",
+    "SuicideRateCountries_2021": 17.61,
+    "SuicideRateMaleCountries_2021": 26.57,
+    "SuicideRateFemaleCountries_2021": 9.32
+  },
+  {
+    "flagCode": "JP",
+    "country": "Japan",
+    "SuicideRateCountries_2021": 17.47,
+    "SuicideRateMaleCountries_2021": 25.2,
+    "SuicideRateFemaleCountries_2021": 10.12
+  },
+  {
+    "flagCode": "BE",
+    "country": "Belgium",
+    "SuicideRateCountries_2021": 17.3,
+    "SuicideRateMaleCountries_2021": 25.49,
+    "SuicideRateFemaleCountries_2021": 9.36
+  },
+  {
+    "flagCode": "KI",
+    "country": "Kiribati",
+    "SuicideRateCountries_2021": 17.29,
+    "SuicideRateMaleCountries_2021": 30.08,
+    "SuicideRateFemaleCountries_2021": 5.02
+  },
+  {
+    "flagCode": "SI",
+    "country": "Slovenia",
+    "SuicideRateCountries_2021": 17.12,
+    "SuicideRateMaleCountries_2021": 28.01,
+    "SuicideRateFemaleCountries_2021": 6.37
+  },
+  {
+    "flagCode": "GU",
+    "country": "Guam",
+    "SuicideRateCountries_2021": 17.08,
+    "SuicideRateMaleCountries_2021": 29.13,
+    "SuicideRateFemaleCountries_2021": 4.71
+  },
+  {
+    "flagCode": "HU",
+    "country": "Hungary",
+    "SuicideRateCountries_2021": 16.91,
+    "SuicideRateMaleCountries_2021": 26.39,
+    "SuicideRateFemaleCountries_2021": 8.27
+  },
+  {
+    "flagCode": "TV",
+    "country": "Tuvalu",
+    "SuicideRateCountries_2021": 16.49,
+    "SuicideRateMaleCountries_2021": 23.79,
+    "SuicideRateFemaleCountries_2021": 8.56
+  },
+  {
+    "flagCode": "VU",
+    "country": "Vanuatu",
+    "SuicideRateCountries_2021": 16.31,
+    "SuicideRateMaleCountries_2021": 25.01,
+    "SuicideRateFemaleCountries_2021": 7.45
+  },
+  {
+    "flagCode": "LK",
+    "country": "Sri Lanka",
+    "SuicideRateCountries_2021": 16.27,
+    "SuicideRateMaleCountries_2021": 26.45,
+    "SuicideRateFemaleCountries_2021": 6.78
+  },
+  {
+    "flagCode": "TW",
+    "country": "Taiwan",
+    "SuicideRateCountries_2021": 16.04,
+    "SuicideRateMaleCountries_2021": 21.9,
+    "SuicideRateFemaleCountries_2021": 10.29
+  },
+  {
+    "flagCode": "RS",
+    "country": "Serbia",
+    "SuicideRateCountries_2021": 15.91,
+    "SuicideRateMaleCountries_2021": 23.78,
+    "SuicideRateFemaleCountries_2021": 8.07
+  },
+  {
+    "flagCode": "CU",
+    "country": "Cuba",
+    "SuicideRateCountries_2021": 15.83,
+    "SuicideRateMaleCountries_2021": 25.07,
+    "SuicideRateFemaleCountries_2021": 6.71
+  },
+  {
+    "flagCode": "TK",
+    "country": "Tokelau",
+    "SuicideRateCountries_2021": 15.83,
+    "SuicideRateMaleCountries_2021": 19.54,
+    "SuicideRateFemaleCountries_2021": 11.97
+  },
+  {
+    "flagCode": "FI",
+    "country": "Finland",
+    "SuicideRateCountries_2021": 15.67,
+    "SuicideRateMaleCountries_2021": 23.96,
+    "SuicideRateFemaleCountries_2021": 7.58
+  },
+  {
+    "flagCode": "MP",
+    "country": "Northern Mariana Islands",
+    "SuicideRateCountries_2021": 15.59,
+    "SuicideRateMaleCountries_2021": 24.66,
+    "SuicideRateFemaleCountries_2021": 5.55
+  },
+  {
+    "flagCode": "NU",
+    "country": "Niue",
+    "SuicideRateCountries_2021": 15.59,
+    "SuicideRateMaleCountries_2021": 20.62,
+    "SuicideRateFemaleCountries_2021": 10.51
+  },
+  {
+    "flagCode": "ME",
+    "country": "Montenegro",
+    "SuicideRateCountries_2021": 15.45,
+    "SuicideRateMaleCountries_2021": 23.77,
+    "SuicideRateFemaleCountries_2021": 7.33
+  },
+  {
+    "flagCode": "MC",
+    "country": "Monaco",
+    "SuicideRateCountries_2021": 15.42,
+    "SuicideRateMaleCountries_2021": 21.33,
+    "SuicideRateFemaleCountries_2021": 9.84
+  },
+  {
+    "flagCode": "ZA",
+    "country": "South Africa",
+    "SuicideRateCountries_2021": 15.3,
+    "SuicideRateMaleCountries_2021": 25.55,
+    "SuicideRateFemaleCountries_2021": 5.46
+  },
+  {
+    "flagCode": "US",
+    "country": "United States",
+    "SuicideRateCountries_2021": 15.25,
+    "SuicideRateMaleCountries_2021": 24.13,
+    "SuicideRateFemaleCountries_2021": 6.66
+  },
+  {
+    "flagCode": "EE",
+    "country": "Estonia",
+    "SuicideRateCountries_2021": 15.19,
+    "SuicideRateMaleCountries_2021": 25.66,
+    "SuicideRateFemaleCountries_2021": 5.83
+  },
+  {
+    "flagCode": "PL",
+    "country": "Poland",
+    "SuicideRateCountries_2021": 15.15,
+    "SuicideRateMaleCountries_2021": 27.27,
+    "SuicideRateFemaleCountries_2021": 3.79
+  },
+  {
+    "flagCode": "CV",
+    "country": "Cape Verde",
+    "SuicideRateCountries_2021": 15.06,
+    "SuicideRateMaleCountries_2021": 25.66,
+    "SuicideRateFemaleCountries_2021": 4.28
+  },
+  {
+    "flagCode": "PW",
+    "country": "Palau",
+    "SuicideRateCountries_2021": 14.99,
+    "SuicideRateMaleCountries_2021": 17.12,
+    "SuicideRateFemaleCountries_2021": 12.39
+  },
+  {
+    "flagCode": "MD",
+    "country": "Moldova",
+    "SuicideRateCountries_2021": 14.92,
+    "SuicideRateMaleCountries_2021": 26.48,
+    "SuicideRateFemaleCountries_2021": 4.41
+  },
+  {
+    "flagCode": "MN",
+    "country": "Mongolia",
+    "SuicideRateCountries_2021": 14.59,
+    "SuicideRateMaleCountries_2021": 25.68,
+    "SuicideRateFemaleCountries_2021": 3.77
+  },
+  {
+    "flagCode": "AT",
+    "country": "Austria",
+    "SuicideRateCountries_2021": 14.34,
+    "SuicideRateMaleCountries_2021": 22.34,
+    "SuicideRateFemaleCountries_2021": 6.55
+  },
+  {
+    "flagCode": "HR",
+    "country": "Croatia",
+    "SuicideRateCountries_2021": 14.31,
+    "SuicideRateMaleCountries_2021": 22.31,
+    "SuicideRateFemaleCountries_2021": 6.76
+  },
+  {
+    "flagCode": "TT",
+    "country": "Trinidad and Tobago",
+    "SuicideRateCountries_2021": 13.82,
+    "SuicideRateMaleCountries_2021": 23.21,
+    "SuicideRateFemaleCountries_2021": 4.4
+  },
+  {
+    "flagCode": "FR",
+    "country": "France",
+    "SuicideRateCountries_2021": 13.72,
+    "SuicideRateMaleCountries_2021": 22.01,
+    "SuicideRateFemaleCountries_2021": 5.92
+  },
+  {
+    "flagCode": "IN",
+    "country": "India",
+    "SuicideRateCountries_2021": 13.33,
+    "SuicideRateMaleCountries_2021": 15.7,
+    "SuicideRateFemaleCountries_2021": 10.85
+  },
+  {
+    "flagCode": "BG",
+    "country": "Bulgaria",
+    "SuicideRateCountries_2021": 13.3,
+    "SuicideRateMaleCountries_2021": 20.72,
+    "SuicideRateFemaleCountries_2021": 6.34
+  },
+  {
+    "flagCode": "NP",
+    "country": "Nepal",
+    "SuicideRateCountries_2021": 13.07,
+    "SuicideRateMaleCountries_2021": 18.26,
+    "SuicideRateFemaleCountries_2021": 8.37
+  },
+  {
+    "flagCode": "AU",
+    "country": "Australia",
+    "SuicideRateCountries_2021": 12.86,
+    "SuicideRateMaleCountries_2021": 19.8,
+    "SuicideRateFemaleCountries_2021": 6.08
+  },
+  {
+    "flagCode": "CA",
+    "country": "Canada",
+    "SuicideRateCountries_2021": 12.51,
+    "SuicideRateMaleCountries_2021": 19.43,
+    "SuicideRateFemaleCountries_2021": 5.77
+  },
+  {
+    "flagCode": "IS",
+    "country": "Iceland",
+    "SuicideRateCountries_2021": 12.49,
+    "SuicideRateMaleCountries_2021": 19.64,
+    "SuicideRateFemaleCountries_2021": 5.13
+  },
+  {
+    "flagCode": "SK",
+    "country": "Slovakia",
+    "SuicideRateCountries_2021": 12.34,
+    "SuicideRateMaleCountries_2021": 21.31,
+    "SuicideRateFemaleCountries_2021": 3.79
+  },
+  {
+    "flagCode": "SE",
+    "country": "Sweden",
+    "SuicideRateCountries_2021": 12.32,
+    "SuicideRateMaleCountries_2021": 16.76,
+    "SuicideRateFemaleCountries_2021": 7.82
+  },
+  {
+    "flagCode": "DE",
+    "country": "Germany",
+    "SuicideRateCountries_2021": 12.31,
+    "SuicideRateMaleCountries_2021": 18.9,
+    "SuicideRateFemaleCountries_2021": 5.77
+  },
+  {
+    "flagCode": "WS",
+    "country": "Samoa",
+    "SuicideRateCountries_2021": 12.18,
+    "SuicideRateMaleCountries_2021": 17.11,
+    "SuicideRateFemaleCountries_2021": 6.95
+  },
+  {
+    "flagCode": "TH",
+    "country": "Thailand",
+    "SuicideRateCountries_2021": 12,
+    "SuicideRateMaleCountries_2021": 20.1,
+    "SuicideRateFemaleCountries_2021": 4.44
+  },
+  {
+    "flagCode": "CH",
+    "country": "Switzerland",
+    "SuicideRateCountries_2021": 11.72,
+    "SuicideRateMaleCountries_2021": 17.43,
+    "SuicideRateFemaleCountries_2021": 6.03
+  },
+  {
+    "flagCode": "NO",
+    "country": "Norway",
+    "SuicideRateCountries_2021": 11.68,
+    "SuicideRateMaleCountries_2021": 16.4,
+    "SuicideRateFemaleCountries_2021": 6.86
+  },
+  {
+    "flagCode": "CF",
+    "country": "Central African Republic",
+    "SuicideRateCountries_2021": 11.64,
+    "SuicideRateMaleCountries_2021": 18.72,
+    "SuicideRateFemaleCountries_2021": 4.83
+  },
+  {
+    "flagCode": "PT",
+    "country": "Portugal",
+    "SuicideRateCountries_2021": 11.62,
+    "SuicideRateMaleCountries_2021": 18.25,
+    "SuicideRateFemaleCountries_2021": 5.63
+  },
+  {
+    "flagCode": "NA",
+    "country": "Namibia",
+    "SuicideRateCountries_2021": 11.57,
+    "SuicideRateMaleCountries_2021": 20.03,
+    "SuicideRateFemaleCountries_2021": 3.61
+  },
+  {
+    "flagCode": "NZ",
+    "country": "New Zealand",
+    "SuicideRateCountries_2021": 11.31,
+    "SuicideRateMaleCountries_2021": 16.97,
+    "SuicideRateFemaleCountries_2021": 5.67
+  },
+  {
+    "flagCode": "DK",
+    "country": "Denmark",
+    "SuicideRateCountries_2021": 11.27,
+    "SuicideRateMaleCountries_2021": 16.26,
+    "SuicideRateFemaleCountries_2021": 6.33
+  },
+  {
+    "flagCode": "NL",
+    "country": "Netherlands",
+    "SuicideRateCountries_2021": 11.23,
+    "SuicideRateMaleCountries_2021": 15.24,
+    "SuicideRateFemaleCountries_2021": 7.28
+  },
+  {
+    "flagCode": "MU",
+    "country": "Mauritius",
+    "SuicideRateCountries_2021": 10.96,
+    "SuicideRateMaleCountries_2021": 18.01,
+    "SuicideRateFemaleCountries_2021": 4.09
+  },
+  {
+    "flagCode": "KP",
+    "country": "North Korea",
+    "SuicideRateCountries_2021": 10.88,
+    "SuicideRateMaleCountries_2021": 12.25,
+    "SuicideRateFemaleCountries_2021": 9.52
+  },
+  {
+    "flagCode": "RO",
+    "country": "Romania",
+    "SuicideRateCountries_2021": 10.76,
+    "SuicideRateMaleCountries_2021": 18.54,
+    "SuicideRateFemaleCountries_2021": 3.4
+  },
+  {
+    "flagCode": "BA",
+    "country": "Bosnia and Herzegovina",
+    "SuicideRateCountries_2021": 10.7,
+    "SuicideRateMaleCountries_2021": 17.41,
+    "SuicideRateFemaleCountries_2021": 4.29
+  },
+  {
+    "flagCode": "CL",
+    "country": "Chile",
+    "SuicideRateCountries_2021": 10.61,
+    "SuicideRateMaleCountries_2021": 17.78,
+    "SuicideRateFemaleCountries_2021": 3.66
+  },
+  {
+    "flagCode": "AR",
+    "country": "Argentina",
+    "SuicideRateCountries_2021": 10.47,
+    "SuicideRateMaleCountries_2021": 17.29,
+    "SuicideRateFemaleCountries_2021": 3.99
+  },
+  {
+    "flagCode": "CR",
+    "country": "Costa Rica",
+    "SuicideRateCountries_2021": 9.85,
+    "SuicideRateMaleCountries_2021": 17.37,
+    "SuicideRateFemaleCountries_2021": 2.83
+  },
+  {
+    "flagCode": "TM",
+    "country": "Turkmenistan",
+    "SuicideRateCountries_2021": 9.72,
+    "SuicideRateMaleCountries_2021": 14.57,
+    "SuicideRateFemaleCountries_2021": 4.65
+  },
+  {
+    "flagCode": "BW",
+    "country": "Botswana",
+    "SuicideRateCountries_2021": 9.72,
+    "SuicideRateMaleCountries_2021": 15.73,
+    "SuicideRateFemaleCountries_2021": 3.84
+  },
+  {
+    "flagCode": "GA",
+    "country": "Gabon",
+    "SuicideRateCountries_2021": 9.67,
+    "SuicideRateMaleCountries_2021": 16.72,
+    "SuicideRateFemaleCountries_2021": 3.12
+  },
+  {
+    "flagCode": "ER",
+    "country": "Eritrea",
+    "SuicideRateCountries_2021": 9.66,
+    "SuicideRateMaleCountries_2021": 14.19,
+    "SuicideRateFemaleCountries_2021": 4.99
+  },
+  {
+    "flagCode": "CG",
+    "country": "Republic of the Congo",
+    "SuicideRateCountries_2021": 9.57,
+    "SuicideRateMaleCountries_2021": 14.47,
+    "SuicideRateFemaleCountries_2021": 4.72
+  },
+  {
+    "flagCode": "MZ",
+    "country": "Mozambique",
+    "SuicideRateCountries_2021": 9.28,
+    "SuicideRateMaleCountries_2021": 15.86,
+    "SuicideRateFemaleCountries_2021": 3.17
+  },
+  {
+    "flagCode": "KG",
+    "country": "Kyrgyzstan",
+    "SuicideRateCountries_2021": 9.25,
+    "SuicideRateMaleCountries_2021": 14.71,
+    "SuicideRateFemaleCountries_2021": 3.92
+  },
+  {
+    "flagCode": "CN",
+    "country": "China",
+    "SuicideRateCountries_2021": 9.17,
+    "SuicideRateMaleCountries_2021": 10.64,
+    "SuicideRateFemaleCountries_2021": 7.63
+  },
+  {
+    "flagCode": "CK",
+    "country": "Cook Islands",
+    "SuicideRateCountries_2021": 9.17,
+    "SuicideRateMaleCountries_2021": 14.39,
+    "SuicideRateFemaleCountries_2021": 3.95
+  },
+  {
+    "flagCode": "LU",
+    "country": "Luxembourg",
+    "SuicideRateCountries_2021": 9.02,
+    "SuicideRateMaleCountries_2021": 13.24,
+    "SuicideRateFemaleCountries_2021": 4.74
+  },
+  {
+    "flagCode": "UZ",
+    "country": "Uzbekistan",
+    "SuicideRateCountries_2021": 8.96,
+    "SuicideRateMaleCountries_2021": 12.29,
+    "SuicideRateFemaleCountries_2021": 5.65
+  },
+  {
+    "flagCode": "FJ",
+    "country": "Fiji",
+    "SuicideRateCountries_2021": 8.89,
+    "SuicideRateMaleCountries_2021": 12.25,
+    "SuicideRateFemaleCountries_2021": 5.45
+  },
+  {
+    "flagCode": "GE",
+    "country": "Georgia",
+    "SuicideRateCountries_2021": 8.64,
+    "SuicideRateMaleCountries_2021": 14.57,
+    "SuicideRateFemaleCountries_2021": 3.18
+  },
+  {
+    "flagCode": "EC",
+    "country": "Ecuador",
+    "SuicideRateCountries_2021": 8.51,
+    "SuicideRateMaleCountries_2021": 13.53,
+    "SuicideRateFemaleCountries_2021": 3.54
+  },
+  {
+    "flagCode": "GW",
+    "country": "Guinea-Bissau",
+    "SuicideRateCountries_2021": 8.49,
+    "SuicideRateMaleCountries_2021": 12.74,
+    "SuicideRateFemaleCountries_2021": 4.44
+  },
+  {
+    "flagCode": "GB",
+    "country": "United Kingdom",
+    "SuicideRateCountries_2021": 8.47,
+    "SuicideRateMaleCountries_2021": 13.18,
+    "SuicideRateFemaleCountries_2021": 3.93
+  },
+  {
+    "flagCode": "IE",
+    "country": "Ireland",
+    "SuicideRateCountries_2021": 8.41,
+    "SuicideRateMaleCountries_2021": 13.7,
+    "SuicideRateFemaleCountries_2021": 3.24
+  },
+  {
+    "flagCode": "SV",
+    "country": "El Salvador",
+    "SuicideRateCountries_2021": 8.32,
+    "SuicideRateMaleCountries_2021": 13.31,
+    "SuicideRateFemaleCountries_2021": 3.92
+  },
+  {
+    "flagCode": "MW",
+    "country": "Malawi",
+    "SuicideRateCountries_2021": 8.31,
+    "SuicideRateMaleCountries_2021": 13.84,
+    "SuicideRateFemaleCountries_2021": 3.05
+  },
+  {
+    "flagCode": "ZM",
+    "country": "Zambia",
+    "SuicideRateCountries_2021": 8.16,
+    "SuicideRateMaleCountries_2021": 13.42,
+    "SuicideRateFemaleCountries_2021": 2.99
+  },
+  {
+    "flagCode": "CD",
+    "country": "DR Congo",
+    "SuicideRateCountries_2021": 8.12,
+    "SuicideRateMaleCountries_2021": 12.39,
+    "SuicideRateFemaleCountries_2021": 3.77
+  },
+  {
+    "flagCode": "VE",
+    "country": "Venezuela",
+    "SuicideRateCountries_2021": 8.11,
+    "SuicideRateMaleCountries_2021": 14.2,
+    "SuicideRateFemaleCountries_2021": 2.41
+  },
+  {
+    "flagCode": "AS",
+    "country": "American Samoa",
+    "SuicideRateCountries_2021": 8.04,
+    "SuicideRateMaleCountries_2021": 11.97,
+    "SuicideRateFemaleCountries_2021": 3.93
+  },
+  {
+    "flagCode": "SS",
+    "country": "South Sudan",
+    "SuicideRateCountries_2021": 8.03,
+    "SuicideRateMaleCountries_2021": 12.19,
+    "SuicideRateFemaleCountries_2021": 3.84
+  },
+  {
+    "flagCode": "VN",
+    "country": "Vietnam",
+    "SuicideRateCountries_2021": 8.01,
+    "SuicideRateMaleCountries_2021": 10.97,
+    "SuicideRateFemaleCountries_2021": 5.07
+  },
+  {
+    "flagCode": "MK",
+    "country": "North Macedonia",
+    "SuicideRateCountries_2021": 7.91,
+    "SuicideRateMaleCountries_2021": 11.08,
+    "SuicideRateFemaleCountries_2021": 4.64
+  },
+  {
+    "flagCode": "AD",
+    "country": "Andorra",
+    "SuicideRateCountries_2021": 7.89,
+    "SuicideRateMaleCountries_2021": 12.22,
+    "SuicideRateFemaleCountries_2021": 3.31
+  },
+  {
+    "flagCode": "TG",
+    "country": "Togo",
+    "SuicideRateCountries_2021": 7.88,
+    "SuicideRateMaleCountries_2021": 12.41,
+    "SuicideRateFemaleCountries_2021": 3.54
+  },
+  {
+    "flagCode": "SA",
+    "country": "Saudi Arabia",
+    "SuicideRateCountries_2021": 7.87,
+    "SuicideRateMaleCountries_2021": 10.95,
+    "SuicideRateFemaleCountries_2021": 3.55
+  },
+  {
+    "flagCode": "BR",
+    "country": "Brazil",
+    "SuicideRateCountries_2021": 7.78,
+    "SuicideRateMaleCountries_2021": 12.47,
+    "SuicideRateFemaleCountries_2021": 3.3
+  },
+  {
+    "flagCode": "SG",
+    "country": "Singapore",
+    "SuicideRateCountries_2021": 7.75,
+    "SuicideRateMaleCountries_2021": 10.19,
+    "SuicideRateFemaleCountries_2021": 5.21
+  },
+  {
+    "flagCode": "ES",
+    "country": "Spain",
+    "SuicideRateCountries_2021": 7.73,
+    "SuicideRateMaleCountries_2021": 11.86,
+    "SuicideRateFemaleCountries_2021": 3.78
+  },
+  {
+    "flagCode": "SM",
+    "country": "San Marino",
+    "SuicideRateCountries_2021": 7.59,
+    "SuicideRateMaleCountries_2021": 12.19,
+    "SuicideRateFemaleCountries_2021": 3.28
+  },
+  {
+    "flagCode": "SN",
+    "country": "Senegal",
+    "SuicideRateCountries_2021": 7.58,
+    "SuicideRateMaleCountries_2021": 11.87,
+    "SuicideRateFemaleCountries_2021": 3.25
+  },
+  {
+    "flagCode": "RW",
+    "country": "Rwanda",
+    "SuicideRateCountries_2021": 7.36,
+    "SuicideRateMaleCountries_2021": 11.13,
+    "SuicideRateFemaleCountries_2021": 3.79
+  },
+  {
+    "flagCode": "HT",
+    "country": "Haiti",
+    "SuicideRateCountries_2021": 7.18,
+    "SuicideRateMaleCountries_2021": 10.28,
+    "SuicideRateFemaleCountries_2021": 4.2
+  },
+  {
+    "flagCode": "CM",
+    "country": "Cameroon",
+    "SuicideRateCountries_2021": 7.16,
+    "SuicideRateMaleCountries_2021": 11.35,
+    "SuicideRateFemaleCountries_2021": 2.97
+  },
+  {
+    "flagCode": "BI",
+    "country": "Burundi",
+    "SuicideRateCountries_2021": 7.13,
+    "SuicideRateMaleCountries_2021": 10.94,
+    "SuicideRateFemaleCountries_2021": 3.3
+  },
+  {
+    "flagCode": "PR",
+    "country": "Puerto Rico",
+    "SuicideRateCountries_2021": 7.1,
+    "SuicideRateMaleCountries_2021": 12.68,
+    "SuicideRateFemaleCountries_2021": 2.05
+  },
+  {
+    "flagCode": "CI",
+    "country": "Ivory Coast",
+    "SuicideRateCountries_2021": 7.05,
+    "SuicideRateMaleCountries_2021": 11.52,
+    "SuicideRateFemaleCountries_2021": 2.28
+  },
+  {
+    "flagCode": "VI",
+    "country": "United States Virgin Islands",
+    "SuicideRateCountries_2021": 7.02,
+    "SuicideRateMaleCountries_2021": 12.76,
+    "SuicideRateFemaleCountries_2021": 1.6
+  },
+  {
+    "flagCode": "AO",
+    "country": "Angola",
+    "SuicideRateCountries_2021": 6.95,
+    "SuicideRateMaleCountries_2021": 11.28,
+    "SuicideRateFemaleCountries_2021": 2.87
+  },
+  {
+    "flagCode": "GQ",
+    "country": "Equatorial Guinea",
+    "SuicideRateCountries_2021": 6.89,
+    "SuicideRateMaleCountries_2021": 10.29,
+    "SuicideRateFemaleCountries_2021": 2.85
+  },
+  {
+    "flagCode": "MX",
+    "country": "Mexico",
+    "SuicideRateCountries_2021": 6.84,
+    "SuicideRateMaleCountries_2021": 11.51,
+    "SuicideRateFemaleCountries_2021": 2.38
+  },
+  {
+    "flagCode": "KE",
+    "country": "Kenya",
+    "SuicideRateCountries_2021": 6.82,
+    "SuicideRateMaleCountries_2021": 10.53,
+    "SuicideRateFemaleCountries_2021": 3.16
+  },
+  {
+    "flagCode": "LC",
+    "country": "Saint Lucia",
+    "SuicideRateCountries_2021": 6.77,
+    "SuicideRateMaleCountries_2021": 12.36,
+    "SuicideRateFemaleCountries_2021": 1.17
+  },
+  {
+    "flagCode": "CO",
+    "country": "Colombia",
+    "SuicideRateCountries_2021": 6.74,
+    "SuicideRateMaleCountries_2021": 11.09,
+    "SuicideRateFemaleCountries_2021": 2.57
+  },
+  {
+    "flagCode": "LR",
+    "country": "Liberia",
+    "SuicideRateCountries_2021": 6.66,
+    "SuicideRateMaleCountries_2021": 9.37,
+    "SuicideRateFemaleCountries_2021": 3.86
+  },
+  {
+    "flagCode": "BF",
+    "country": "Burkina Faso",
+    "SuicideRateCountries_2021": 6.56,
+    "SuicideRateMaleCountries_2021": 10.43,
+    "SuicideRateFemaleCountries_2021": 2.93
+  },
+  {
+    "flagCode": "IT",
+    "country": "Italy",
+    "SuicideRateCountries_2021": 6.44,
+    "SuicideRateMaleCountries_2021": 10.37,
+    "SuicideRateFemaleCountries_2021": 2.72
+  },
+  {
+    "flagCode": "MG",
+    "country": "Madagascar",
+    "SuicideRateCountries_2021": 6.31,
+    "SuicideRateMaleCountries_2021": 9.05,
+    "SuicideRateFemaleCountries_2021": 3.64
+  },
+  {
+    "flagCode": "KM",
+    "country": "Comoros",
+    "SuicideRateCountries_2021": 6.3,
+    "SuicideRateMaleCountries_2021": 7.82,
+    "SuicideRateFemaleCountries_2021": 4.79
+  },
+  {
+    "flagCode": "VC",
+    "country": "Saint Vincent and the Grenadines",
+    "SuicideRateCountries_2021": 6.19,
+    "SuicideRateMaleCountries_2021": 11.19,
+    "SuicideRateFemaleCountries_2021": 0.97
+  },
+  {
+    "flagCode": "ET",
+    "country": "Ethiopia",
+    "SuicideRateCountries_2021": 6.17,
+    "SuicideRateMaleCountries_2021": 9.4,
+    "SuicideRateFemaleCountries_2021": 2.88
+  },
+  {
+    "flagCode": "UG",
+    "country": "Uganda",
+    "SuicideRateCountries_2021": 5.84,
+    "SuicideRateMaleCountries_2021": 9.79,
+    "SuicideRateFemaleCountries_2021": 2.01
+  },
+  {
+    "flagCode": "PK",
+    "country": "Pakistan",
+    "SuicideRateCountries_2021": 5.82,
+    "SuicideRateMaleCountries_2021": 8.46,
+    "SuicideRateFemaleCountries_2021": 3.05
+  },
+  {
+    "flagCode": "PY",
+    "country": "Paraguay",
+    "SuicideRateCountries_2021": 5.8,
+    "SuicideRateMaleCountries_2021": 8.63,
+    "SuicideRateFemaleCountries_2021": 2.91
+  },
+  {
+    "flagCode": "SO",
+    "country": "Somalia",
+    "SuicideRateCountries_2021": 5.78,
+    "SuicideRateMaleCountries_2021": 7.11,
+    "SuicideRateFemaleCountries_2021": 4.39
+  },
+  {
+    "flagCode": "SC",
+    "country": "Seychelles",
+    "SuicideRateCountries_2021": 5.77,
+    "SuicideRateMaleCountries_2021": 9.92,
+    "SuicideRateFemaleCountries_2021": 1.13
+  },
+  {
+    "flagCode": "BT",
+    "country": "Bhutan",
+    "SuicideRateCountries_2021": 5.75,
+    "SuicideRateMaleCountries_2021": 7.57,
+    "SuicideRateFemaleCountries_2021": 3.79
+  },
+  {
+    "flagCode": "NI",
+    "country": "Nicaragua",
+    "SuicideRateCountries_2021": 5.72,
+    "SuicideRateMaleCountries_2021": 8.91,
+    "SuicideRateFemaleCountries_2021": 2.6
+  },
+  {
+    "flagCode": "GH",
+    "country": "Ghana",
+    "SuicideRateCountries_2021": 5.68,
+    "SuicideRateMaleCountries_2021": 9.21,
+    "SuicideRateFemaleCountries_2021": 2.34
+  },
+  {
+    "flagCode": "TZ",
+    "country": "Tanzania",
+    "SuicideRateCountries_2021": 5.66,
+    "SuicideRateMaleCountries_2021": 8.9,
+    "SuicideRateFemaleCountries_2021": 2.59
+  },
+  {
+    "flagCode": "DJ",
+    "country": "Djibouti",
+    "SuicideRateCountries_2021": 5.63,
+    "SuicideRateMaleCountries_2021": 7.67,
+    "SuicideRateFemaleCountries_2021": 3.25
+  },
+  {
+    "flagCode": "GM",
+    "country": "Gambia",
+    "SuicideRateCountries_2021": 5.58,
+    "SuicideRateMaleCountries_2021": 8.11,
+    "SuicideRateFemaleCountries_2021": 3.12
+  },
+  {
+    "flagCode": "BO",
+    "country": "Bolivia",
+    "SuicideRateCountries_2021": 5.53,
+    "SuicideRateMaleCountries_2021": 7.61,
+    "SuicideRateFemaleCountries_2021": 3.44
+  },
+  {
+    "flagCode": "AM",
+    "country": "Armenia",
+    "SuicideRateCountries_2021": 5.53,
+    "SuicideRateMaleCountries_2021": 8.86,
+    "SuicideRateFemaleCountries_2021": 2.44
+  },
+  {
+    "flagCode": "LY",
+    "country": "Libya",
+    "SuicideRateCountries_2021": 5.52,
+    "SuicideRateMaleCountries_2021": 7.62,
+    "SuicideRateFemaleCountries_2021": 3.29
+  },
+  {
+    "flagCode": "TD",
+    "country": "Chad",
+    "SuicideRateCountries_2021": 5.43,
+    "SuicideRateMaleCountries_2021": 7.88,
+    "SuicideRateFemaleCountries_2021": 3
+  },
+  {
+    "flagCode": "GT",
+    "country": "Guatemala",
+    "SuicideRateCountries_2021": 5.43,
+    "SuicideRateMaleCountries_2021": 8.45,
+    "SuicideRateFemaleCountries_2021": 2.59
+  },
+  {
+    "flagCode": "DO",
+    "country": "Dominican Republic",
+    "SuicideRateCountries_2021": 5.39,
+    "SuicideRateMaleCountries_2021": 8.73,
+    "SuicideRateFemaleCountries_2021": 2.02
+  },
+  {
+    "flagCode": "BJ",
+    "country": "Benin",
+    "SuicideRateCountries_2021": 5.32,
+    "SuicideRateMaleCountries_2021": 8.32,
+    "SuicideRateFemaleCountries_2021": 2.41
+  },
+  {
+    "flagCode": "PA",
+    "country": "Panama",
+    "SuicideRateCountries_2021": 5.28,
+    "SuicideRateMaleCountries_2021": 8.82,
+    "SuicideRateFemaleCountries_2021": 1.7
+  },
+  {
+    "flagCode": "LA",
+    "country": "Laos",
+    "SuicideRateCountries_2021": 5.23,
+    "SuicideRateMaleCountries_2021": 7.58,
+    "SuicideRateFemaleCountries_2021": 2.85
+  },
+  {
+    "flagCode": "GR",
+    "country": "Greece",
+    "SuicideRateCountries_2021": 5.22,
+    "SuicideRateMaleCountries_2021": 8.65,
+    "SuicideRateFemaleCountries_2021": 1.98
+  },
+  {
+    "flagCode": "MY",
+    "country": "Malaysia",
+    "SuicideRateCountries_2021": 5.17,
+    "SuicideRateMaleCountries_2021": 8,
+    "SuicideRateFemaleCountries_2021": 2.13
+  },
+  {
+    "flagCode": "IL",
+    "country": "Israel",
+    "SuicideRateCountries_2021": 5.15,
+    "SuicideRateMaleCountries_2021": 8.36,
+    "SuicideRateFemaleCountries_2021": 1.97
+  },
+  {
+    "flagCode": "SL",
+    "country": "Sierra Leone",
+    "SuicideRateCountries_2021": 5.09,
+    "SuicideRateMaleCountries_2021": 6.91,
+    "SuicideRateFemaleCountries_2021": 3.29
+  },
+  {
+    "flagCode": "BZ",
+    "country": "Belize",
+    "SuicideRateCountries_2021": 5.09,
+    "SuicideRateMaleCountries_2021": 8.88,
+    "SuicideRateFemaleCountries_2021": 1.34
+  },
+  {
+    "flagCode": "GN",
+    "country": "Guinea",
+    "SuicideRateCountries_2021": 5.02,
+    "SuicideRateMaleCountries_2021": 6.89,
+    "SuicideRateFemaleCountries_2021": 3.26
+  },
+  {
+    "flagCode": "MT",
+    "country": "Malta",
+    "SuicideRateCountries_2021": 4.96,
+    "SuicideRateMaleCountries_2021": 8.06,
+    "SuicideRateFemaleCountries_2021": 1.85
+  },
+  {
+    "flagCode": "BB",
+    "country": "Barbados",
+    "SuicideRateCountries_2021": 4.67,
+    "SuicideRateMaleCountries_2021": 8.22,
+    "SuicideRateFemaleCountries_2021": 1.36
+  },
+  {
+    "flagCode": "TO",
+    "country": "Tonga",
+    "SuicideRateCountries_2021": 4.64,
+    "SuicideRateMaleCountries_2021": 5.97,
+    "SuicideRateFemaleCountries_2021": 3.31
+  },
+  {
+    "flagCode": "GD",
+    "country": "Grenada",
+    "SuicideRateCountries_2021": 4.63,
+    "SuicideRateMaleCountries_2021": 7.32,
+    "SuicideRateFemaleCountries_2021": 1.8
+  },
+  {
+    "flagCode": "KH",
+    "country": "Cambodia",
+    "SuicideRateCountries_2021": 4.54,
+    "SuicideRateMaleCountries_2021": 6.46,
+    "SuicideRateFemaleCountries_2021": 2.7
+  },
+  {
+    "flagCode": "IQ",
+    "country": "Iraq",
+    "SuicideRateCountries_2021": 4.41,
+    "SuicideRateMaleCountries_2021": 6.55,
+    "SuicideRateFemaleCountries_2021": 2.12
+  },
+  {
+    "flagCode": "IR",
+    "country": "Iran",
+    "SuicideRateCountries_2021": 4.34,
+    "SuicideRateMaleCountries_2021": 6.46,
+    "SuicideRateFemaleCountries_2021": 2.16
+  },
+  {
+    "flagCode": "SD",
+    "country": "Sudan",
+    "SuicideRateCountries_2021": 4.28,
+    "SuicideRateMaleCountries_2021": 5.41,
+    "SuicideRateFemaleCountries_2021": 3.11
+  },
+  {
+    "flagCode": "BH",
+    "country": "Bahrain",
+    "SuicideRateCountries_2021": 4.28,
+    "SuicideRateMaleCountries_2021": 6.02,
+    "SuicideRateFemaleCountries_2021": 1.33
+  },
+  {
+    "flagCode": "NG",
+    "country": "Nigeria",
+    "SuicideRateCountries_2021": 4.27,
+    "SuicideRateMaleCountries_2021": 7.22,
+    "SuicideRateFemaleCountries_2021": 1.56
+  },
+  {
+    "flagCode": "DM",
+    "country": "Dominica",
+    "SuicideRateCountries_2021": 4.23,
+    "SuicideRateMaleCountries_2021": 7.46,
+    "SuicideRateFemaleCountries_2021": 0.89
+  },
+  {
+    "flagCode": "AL",
+    "country": "Albania",
+    "SuicideRateCountries_2021": 4.1,
+    "SuicideRateMaleCountries_2021": 5.28,
+    "SuicideRateFemaleCountries_2021": 2.91
+  },
+  {
+    "flagCode": "ML",
+    "country": "Mali",
+    "SuicideRateCountries_2021": 4.09,
+    "SuicideRateMaleCountries_2021": 5.24,
+    "SuicideRateFemaleCountries_2021": 2.96
+  },
+  {
+    "flagCode": "TL",
+    "country": "Timor-Leste",
+    "SuicideRateCountries_2021": 4.08,
+    "SuicideRateMaleCountries_2021": 5.62,
+    "SuicideRateFemaleCountries_2021": 2.49
+  },
+  {
+    "flagCode": "BN",
+    "country": "Brunei",
+    "SuicideRateCountries_2021": 4.05,
+    "SuicideRateMaleCountries_2021": 6.17,
+    "SuicideRateFemaleCountries_2021": 1.68
+  },
+  {
+    "flagCode": "CY",
+    "country": "Cyprus",
+    "SuicideRateCountries_2021": 4.04,
+    "SuicideRateMaleCountries_2021": 6.48,
+    "SuicideRateFemaleCountries_2021": 1.67
+  },
+  {
+    "flagCode": "BM",
+    "country": "Bermuda",
+    "SuicideRateCountries_2021": 3.99,
+    "SuicideRateMaleCountries_2021": 7.06,
+    "SuicideRateFemaleCountries_2021": 1.11
+  },
+  {
+    "flagCode": "HN",
+    "country": "Honduras",
+    "SuicideRateCountries_2021": 3.9,
+    "SuicideRateMaleCountries_2021": 6.47,
+    "SuicideRateFemaleCountries_2021": 1.48
+  },
+  {
+    "flagCode": "TR",
+    "country": "Turkey",
+    "SuicideRateCountries_2021": 3.84,
+    "SuicideRateMaleCountries_2021": 6.02,
+    "SuicideRateFemaleCountries_2021": 1.65
+  },
+  {
+    "flagCode": "QA",
+    "country": "Qatar",
+    "SuicideRateCountries_2021": 3.81,
+    "SuicideRateMaleCountries_2021": 5.08,
+    "SuicideRateFemaleCountries_2021": 0.77
+  },
+  {
+    "flagCode": "PH",
+    "country": "Philippines",
+    "SuicideRateCountries_2021": 3.77,
+    "SuicideRateMaleCountries_2021": 6.04,
+    "SuicideRateFemaleCountries_2021": 1.44
+  },
+  {
+    "flagCode": "MA",
+    "country": "Morocco",
+    "SuicideRateCountries_2021": 3.68,
+    "SuicideRateMaleCountries_2021": 4.28,
+    "SuicideRateFemaleCountries_2021": 3.07
+  },
+  {
+    "flagCode": "BD",
+    "country": "Bangladesh",
+    "SuicideRateCountries_2021": 3.67,
+    "SuicideRateMaleCountries_2021": 5.18,
+    "SuicideRateFemaleCountries_2021": 2.21
+  },
+  {
+    "flagCode": "AF",
+    "country": "Afghanistan",
+    "SuicideRateCountries_2021": 3.6,
+    "SuicideRateMaleCountries_2021": 4.16,
+    "SuicideRateFemaleCountries_2021": 3.01
+  },
+  {
+    "flagCode": "MM",
+    "country": "Myanmar",
+    "SuicideRateCountries_2021": 3.57,
+    "SuicideRateMaleCountries_2021": 6.06,
+    "SuicideRateFemaleCountries_2021": 1.26
+  },
+  {
+    "flagCode": "YE",
+    "country": "Yemen",
+    "SuicideRateCountries_2021": 3.56,
+    "SuicideRateMaleCountries_2021": 4.63,
+    "SuicideRateFemaleCountries_2021": 2.46
+  },
+  {
+    "flagCode": "NE",
+    "country": "Niger",
+    "SuicideRateCountries_2021": 3.55,
+    "SuicideRateMaleCountries_2021": 4.6,
+    "SuicideRateFemaleCountries_2021": 2.52
+  },
+  {
+    "flagCode": "MR",
+    "country": "Mauritania",
+    "SuicideRateCountries_2021": 3.55,
+    "SuicideRateMaleCountries_2021": 4.98,
+    "SuicideRateFemaleCountries_2021": 2.16
+  },
+  {
+    "flagCode": "TJ",
+    "country": "Tajikistan",
+    "SuicideRateCountries_2021": 3.37,
+    "SuicideRateMaleCountries_2021": 4.91,
+    "SuicideRateFemaleCountries_2021": 1.79
+  },
+  {
+    "flagCode": "TN",
+    "country": "Tunisia",
+    "SuicideRateCountries_2021": 3.06,
+    "SuicideRateMaleCountries_2021": 4.41,
+    "SuicideRateFemaleCountries_2021": 1.73
+  },
+  {
+    "flagCode": "PE",
+    "country": "Peru",
+    "SuicideRateCountries_2021": 2.9,
+    "SuicideRateMaleCountries_2021": 4.35,
+    "SuicideRateFemaleCountries_2021": 1.43
+  },
+  {
+    "flagCode": "KN",
+    "country": "Saint Kitts and Nevis",
+    "SuicideRateCountries_2021": 2.85,
+    "SuicideRateMaleCountries_2021": 4.96,
+    "SuicideRateFemaleCountries_2021": 0.74
+  },
+  {
+    "flagCode": "DZ",
+    "country": "Algeria",
+    "SuicideRateCountries_2021": 2.76,
+    "SuicideRateMaleCountries_2021": 3.6,
+    "SuicideRateFemaleCountries_2021": 1.9
+  },
+  {
+    "flagCode": "BS",
+    "country": "Bahamas",
+    "SuicideRateCountries_2021": 2.61,
+    "SuicideRateMaleCountries_2021": 4.75,
+    "SuicideRateFemaleCountries_2021": 0.62
+  },
+  {
+    "flagCode": "AZ",
+    "country": "Azerbaijan",
+    "SuicideRateCountries_2021": 2.5,
+    "SuicideRateMaleCountries_2021": 3.91,
+    "SuicideRateFemaleCountries_2021": 1.08
+  },
+  {
+    "flagCode": "AE",
+    "country": "United Arab Emirates",
+    "SuicideRateCountries_2021": 2.37,
+    "SuicideRateMaleCountries_2021": 2.79,
+    "SuicideRateFemaleCountries_2021": 1.3
+  },
+  {
+    "flagCode": "PG",
+    "country": "Papua New Guinea",
+    "SuicideRateCountries_2021": 2.28,
+    "SuicideRateMaleCountries_2021": 2.84,
+    "SuicideRateFemaleCountries_2021": 1.67
+  },
+  {
+    "flagCode": "MV",
+    "country": "Maldives",
+    "SuicideRateCountries_2021": 2.22,
+    "SuicideRateMaleCountries_2021": 3.33,
+    "SuicideRateFemaleCountries_2021": 0.44
+  },
+  {
+    "flagCode": "KW",
+    "country": "Kuwait",
+    "SuicideRateCountries_2021": 1.97,
+    "SuicideRateMaleCountries_2021": 3.05,
+    "SuicideRateFemaleCountries_2021": 0.75
+  },
+  {
+    "flagCode": "ID",
+    "country": "Indonesia",
+    "SuicideRateCountries_2021": 1.64,
+    "SuicideRateMaleCountries_2021": 2.21,
+    "SuicideRateFemaleCountries_2021": 1.05
+  },
+  {
+    "flagCode": "JM",
+    "country": "Jamaica",
+    "SuicideRateCountries_2021": 1.43,
+    "SuicideRateMaleCountries_2021": 2.44,
+    "SuicideRateFemaleCountries_2021": 0.44
+  },
+  {
+    "flagCode": "AG",
+    "country": "Antigua and Barbuda",
+    "SuicideRateCountries_2021": 1.38,
+    "SuicideRateMaleCountries_2021": 2.5,
+    "SuicideRateFemaleCountries_2021": 0.3
+  },
+  {
+    "flagCode": "ST",
+    "country": "Sao Tome and Principe",
+    "SuicideRateCountries_2021": 1.15,
+    "SuicideRateMaleCountries_2021": 1.77,
+    "SuicideRateFemaleCountries_2021": 0.52
+  },
+  {
+    "flagCode": "JO",
+    "country": "Jordan",
+    "SuicideRateCountries_2021": 1.07,
+    "SuicideRateMaleCountries_2021": 1.6,
+    "SuicideRateFemaleCountries_2021": 0.46
+  },
+  {
+    "flagCode": "OM",
+    "country": "Oman",
+    "SuicideRateCountries_2021": 1.04,
+    "SuicideRateMaleCountries_2021": 1.49,
+    "SuicideRateFemaleCountries_2021": 0.33
+  },
+  {
+    "flagCode": "EG",
+    "country": "Egypt",
+    "SuicideRateCountries_2021": 1.01,
+    "SuicideRateMaleCountries_2021": 1.48,
+    "SuicideRateFemaleCountries_2021": 0.5
+  },
+  {
+    "flagCode": "LB",
+    "country": "Lebanon",
+    "SuicideRateCountries_2021": 0.94,
+    "SuicideRateMaleCountries_2021": 1.18,
+    "SuicideRateFemaleCountries_2021": 0.69
+  },
+  {
+    "flagCode": "SY",
+    "country": "Syria",
+    "SuicideRateCountries_2021": 0.89,
+    "SuicideRateMaleCountries_2021": 1.44,
+    "SuicideRateFemaleCountries_2021": 0.39
+  },
+  {
+    "flagCode": "PS",
+    "country": "Palestine",
+    "SuicideRateCountries_2021": 0.78,
+    "SuicideRateMaleCountries_2021": 1.24,
+    "SuicideRateFemaleCountries_2021": 0.31
+  }
+]

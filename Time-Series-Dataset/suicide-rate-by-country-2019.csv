@@ -1,0 +1,183 @@
+"flagCode","country","SuicideRateCountries_2019","SuicideRateMaleCountries_2019","SuicideRateFemaleCountries_2019"
+"GY","Guyana",40.3,63,17.4
+"LT","Lithuania",26.1,45.4,9.6
+"KR","South Korea",28.6,40.2,16.9
+"RU","Russia",25.1,43.6,9.1
+"SR","Suriname",25.4,38.8,11.8
+"UA","Ukraine",21.6,39.2,6.5
+"UY","Uruguay",21.2,34.5,8.9
+"LS","Lesotho",72.4,116,30.1
+"BY","Belarus",21.2,36.7,7.7
+"FM","Micronesia",28.2,43.2,12.7
+"LV","Latvia",20.1,35.5,7
+"SZ","Eswatini",29.4,55.1,4.7
+"SB","Solomon Islands",14.7,27,1.9
+"KZ","Kazakhstan",17.6,29,6.8
+"ZW","Zimbabwe",14.1,20,8.8
+"JP","Japan",15.3,21.8,9.2
+"BE","Belgium",18.3,24.9,11.8
+"KI","Kiribati",28.3,48.6,8.7
+"SI","Slovenia",19.8,31.4,8.3
+"HU","Hungary",16.6,25.9,8.3
+"VU","Vanuatu",18,28.1,7.6
+"LK","Sri Lanka",14,22.3,6.2
+"RS","Serbia",11.4,16.6,6.3
+"CU","Cuba",14.5,23,6
+"FI","Finland",15.3,23.2,7.6
+"ME","Montenegro",21,31.7,10.4
+"ZA","South Africa",23.5,37.6,9.8
+"US","United States",16.1,25,7.5
+"EE","Estonia",14.9,24.3,6.5
+"PL","Poland",11.3,20.1,3.1
+"CV","Cape Verde",12.9,21.3,4.5
+"MD","Moldova",14.7,26.1,4.1
+"MN","Mongolia",17.9,30.7,5.4
+"AT","Austria",14.6,22.8,6.7
+"HR","Croatia",16.4,25.3,8.1
+"TT","Trinidad and Tobago",8.7,13.9,3.6
+"FR","France",13.8,20.4,7.6
+"IN","India",12.7,14.1,11.1
+"BG","Bulgaria",9.7,15.3,4.4
+"NP","Nepal",9,16.4,2.7
+"AU","Australia",12.5,18.6,6.4
+"CA","Canada",11.8,17.6,6.1
+"IS","Iceland",11.9,19.8,3.9
+"SK","Slovakia",12.1,21.2,3.4
+"SE","Sweden",14.7,19.9,9.5
+"DE","Germany",12.3,18.6,6.2
+"WS","Samoa",12.6,18,6.7
+"TH","Thailand",8.8,15,2.9
+"CH","Switzerland",14.5,20.2,9
+"NO","Norway",11.8,15.8,7.7
+"CF","Central African Republic",12.3,19.6,5.2
+"PT","Portugal",11.5,17.9,5.7
+"NA","Namibia",9.7,16.7,3.2
+"NZ","New Zealand",11,16.5,5.8
+"DK","Denmark",10.7,14.9,6.5
+"NL","Netherlands",11.8,15.5,8.3
+"MU","Mauritius",9.5,16.3,2.8
+"KP","North Korea",9.4,11.2,7.6
+"RO","Romania",9.7,16.5,3.3
+"BA","Bosnia and Herzegovina",10.9,17.6,4.5
+"CL","Chile",9,14.9,3.2
+"AR","Argentina",8.4,13.7,3.3
+"CR","Costa Rica",8.1,14.1,2
+"TM","Turkmenistan",5.7,8.8,2.7
+"BW","Botswana",16.1,26.3,6.4
+"GA","Gabon",8.4,14.2,2.4
+"ER","Eritrea",10.9,16.6,5.2
+"CG","Republic of the Congo",6.5,9.5,3.5
+"MZ","Mozambique",13.6,22,5.7
+"KG","Kyrgyzstan",7.4,11.7,3.2
+"CN","China",8.1,9.8,6.2
+"LU","Luxembourg",11.3,15.3,7.1
+"UZ","Uzbekistan",8,11.3,4.8
+"FJ","Fiji",9,12.2,5.7
+"GE","Georgia",9.2,16,3
+"EC","Ecuador",7.6,11.6,3.6
+"GW","Guinea-Bissau",7,10.2,3.9
+"GB","United Kingdom",7.9,11.8,4
+"IE","Ireland",9.6,15.4,3.9
+"SV","El Salvador",6.1,10.5,2.1
+"MW","Malawi",5.4,9.2,1.7
+"ZM","Zambia",7.3,12,2.7
+"CD","DR Congo",6.7,10.6,2.8
+"VE","Venezuela",2.1,3.5,0.7
+"SS","South Sudan",3.9,5.7,2
+"VN","Vietnam",7.5,10.4,4.7
+"MK","North Macedonia",9.4,13.9,4.8
+"TG","Togo",8.8,13.8,3.9
+"SA","Saudi Arabia",6,8.9,2
+"BR","Brazil",6.9,10.9,3
+"SG","Singapore",11.2,15,7.1
+"ES","Spain",7.7,11.4,4.2
+"SN","Senegal",6,9.2,3
+"RW","Rwanda",5.6,8.2,3
+"HT","Haiti",9.6,11.8,7.6
+"CM","Cameroon",9,13.6,4.4
+"BI","Burundi",6.2,9.2,3.4
+"CI","Ivory Coast",8.9,14.9,2.8
+"AO","Angola",6.1,10,2.3
+"GQ","Equatorial Guinea",7.9,9.4,6
+"MX","Mexico",5.3,8.5,2.2
+"KE","Kenya",6.1,9.1,3.2
+"LC","Saint Lucia",7.9,14.3,1.7
+"CO","Colombia",3.9,6.1,1.8
+"LR","Liberia",4.5,5.6,3.3
+"BF","Burkina Faso",7.5,11.3,3.7
+"IT","Italy",6.7,10.1,3.5
+"MG","Madagascar",5.5,7.6,3.4
+"KM","Comoros",5.4,7,3.8
+"VC","Saint Vincent and the Grenadines",1,1.3,0.6
+"ET","Ethiopia",5.4,7.7,3.1
+"UG","Uganda",4.6,7.6,1.7
+"PK","Pakistan",8.9,13.3,4.3
+"PY","Paraguay",6,8.7,3.2
+"SO","Somalia",7.9,12,3.8
+"SC","Seychelles",8.1,14.4,1.4
+"BT","Bhutan",4.6,6.3,2.7
+"NI","Nicaragua",4.4,6.9,1.9
+"GH","Ghana",6.6,11.8,1.2
+"TZ","Tanzania",4.3,6.6,2
+"DJ","Djibouti",9.6,12.6,6.4
+"GM","Gambia",4.8,6.6,3
+"BO","Bolivia",6.2,8.4,4.1
+"AM","Armenia",3.3,5.6,1.3
+"LY","Libya",4.5,6,2.9
+"TD","Chad",6.4,9.6,3.3
+"GT","Guatemala",5.9,9.4,2.6
+"DO","Dominican Republic",4.9,8,1.8
+"BJ","Benin",7.8,11.8,3.8
+"PA","Panama",2.9,4.7,1
+"LA","Laos",5.4,7.6,3.2
+"GR","Greece",5.1,8.4,1.9
+"MY","Malaysia",5.7,8.9,2.3
+"IL","Israel",5.3,8.4,2.3
+"SL","Sierra Leone",6.7,8.3,5.1
+"BZ","Belize",7.1,12.5,1.7
+"GN","Guinea",7,9.2,4.9
+"MT","Malta",6.1,9.8,2.3
+"BB","Barbados",0.6,0.9,0.3
+"TO","Tonga",3.8,5,2.6
+"GD","Grenada",0.7,0.6,0.7
+"KH","Cambodia",4.9,7,2.8
+"IQ","Iraq",3.6,5.2,2
+"IR","Iran",5.2,7.7,2.8
+"SD","Sudan",3.8,4.9,2.8
+"BH","Bahrain",8.9,12.5,2.4
+"NG","Nigeria",3.5,5,1.9
+"AL","Albania",4.3,5.9,2.7
+"ML","Mali",4.1,5.3,2.9
+"TL","Timor-Leste",3.7,5.3,2
+"BN","Brunei",2.7,4.4,0.8
+"CY","Cyprus",3.6,6,1.3
+"HN","Honduras",2.1,3.3,0.8
+"TR","Turkey",2.4,3.6,1.2
+"QA","Qatar",5.8,7.2,1.7
+"PH","Philippines",2.2,3.1,1.2
+"MA","Morocco",7.2,9.7,4.7
+"BD","Bangladesh",3.7,5.7,1.7
+"AF","Afghanistan",4.1,4.6,3.6
+"MM","Myanmar",2.9,4.9,1.1
+"YE","Yemen",5.8,7,4.6
+"NE","Niger",5.3,7.2,3.3
+"MR","Mauritania",3.1,4,2.2
+"TJ","Tajikistan",4.3,5.7,2.8
+"TN","Tunisia",3.3,4.7,1.9
+"PE","Peru",2.8,4.2,1.4
+"DZ","Algeria",2.5,3.1,1.8
+"BS","Bahamas",3.5,5.9,1.3
+"AZ","Azerbaijan",4.1,6.6,1.6
+"AE","United Arab Emirates",6.4,8,3
+"PG","Papua New Guinea",3,4.3,1.6
+"MV","Maldives",2.7,3.9,0.8
+"KW","Kuwait",2.9,4.3,0.7
+"ID","Indonesia",2.4,3.7,1.1
+"JM","Jamaica",2.4,3.7,1.1
+"AG","Antigua and Barbuda",0.4,,0.8
+"ST","Sao Tome and Principe",1.5,2.2,0.8
+"JO","Jordan",1.6,2.5,0.7
+"OM","Oman",4.9,6.8,1
+"EG","Egypt",3,4,2
+"LB","Lebanon",2.8,3.8,1.7
+"SY","Syria",2,3.2,0.7
