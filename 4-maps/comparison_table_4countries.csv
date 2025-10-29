@@ -1,5 +1,5 @@
-Category,Country,HDI,Suicide Rate,GDP per Capita,Income Group,Continent,Data Quality
-"High HDI, Low Suicide",Hong Kong,0.955,4.41,"$43,748",High,Asia,⚠️ Low data reliability
-"High HDI, High Suicide",Guyana,0.776,31.26,"$9,889",Upper-Middle,America,✅ Sufficient data
-"Low HDI, High Suicide",Lesotho,0.55,20.57,$995,Low,Africa,✅ Sufficient data
-"Low HDI, Low Suicide",Niger,0.419,3.55,$535,Low,Africa,✅ Sufficient data
+Category,Country,HDI,Suicide Rate,GDP per Capita,Income Group,Continent
+"High HDI, Low Suicide",Hong Kong,0.955,4.41,"$43,748",High,Asia
+"High HDI, High Suicide",Guyana,0.776,31.26,"$9,889",Upper-Middle,America
+"Low HDI, High Suicide",Lesotho,0.55,20.57,$995,Low,Africa
+"Low HDI, Low Suicide",Niger,0.419,3.55,$535,Low,Africa
