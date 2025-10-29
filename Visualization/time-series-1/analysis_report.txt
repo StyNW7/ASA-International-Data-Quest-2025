@@ -1,0 +1,23 @@
+COMPREHENSIVE ANALYSIS REPORT
+==================================================
+
+DATASET OVERVIEW:
+- Time period: 2019 - 2023
+- Countries: 205
+- Latest year with suicide data: 2023
+- Total observations: 985
+
+DATA QUALITY SUMMARY:
+- [GOOD] Sufficient data: 889 observations (90.3%)
+- [LOW] Low data reliability: 65 observations (6.6%)
+
+LATEST YEAR KEY STATISTICS:
+- Global average suicide rate: 9.09
+- Global average HDI: 0.740
+- Global median GDP per capita: $5,852
+
+INCOME GROUP ANALYSIS:
+- Low: Suicide rate = 7.21, HDI = 0.554, Countries = 51
+- Lower-Middle: Suicide rate = 8.33, HDI = 0.724, Countries = 54
+- Upper-Middle: Suicide rate = 11.34, HDI = 0.805, Countries = 46
+- High: Suicide rate = 9.87, HDI = 0.924, Countries = 40

@@ -1,0 +1,7 @@
+,Suicide_rate,Suicide_rate,Suicide_rate,Suicide_rate,HDI,GDP_per_capita
+,mean,median,std,count,mean,median
+income_group_auto,,,,,,
+High,9.872,10.125,5.231,40,0.924,42432.533
+Low,7.215,6.3,4.152,51,0.554,1061.383
+Lower-Middle,8.332,6.815,5.798,54,0.724,4169.608
+Upper-Middle,11.343,10.16,7.294,46,0.805,11085.432

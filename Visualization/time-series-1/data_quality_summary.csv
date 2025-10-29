@@ -1,0 +1,5 @@
+,Suicide_rate,Suicide_rate,Suicide_rate,HDI,HDI,GDP_per_capita,GDP_per_capita
+,mean,std,count,mean,std,mean,std
+Low_data_quality_flag,,,,,,,
+[GOOD] Sufficient data,10.855,39.692,889,0.724,0.152,13514.931,18979.275
+[LOW] Low data reliability,10.81,6.151,65,0.744,0.161,17703.653,14395.082
