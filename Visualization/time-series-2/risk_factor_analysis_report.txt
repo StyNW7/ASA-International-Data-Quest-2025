@@ -1,0 +1,32 @@
+COMPREHENSIVE RISK FACTOR ANALYSIS REPORT
+============================================================
+
+KEY FINDINGS:
+1. Development-Risk Patterns:
+   - Countries in medium development (HDI 0.55-0.80) show highest suicide risk
+   - Very high HDI countries exhibit 'development paradox'
+   - Low HDI countries show resilience in some cases
+
+2. Top Correlated Risk Factors:
+   - Population ages 15-64 (% of total population): -0.074
+   - Urban population (% of total population): -0.072
+   - School enrollment, secondary (% gross): -0.044
+   - log_GDP_per_capita: -0.044
+   - HDI_growth: 0.034
+   - Life expectancy at birth, total (years): -0.033
+   - HDI: -0.025
+   - GDP_per_capita: -0.013
+   - Gini index: -0.009
+   - Suicide_change: 0.002
+
+3. High-Risk Groups Identified:
+   - Countries undergoing rapid development transitions
+   - Societies with high income inequality
+   - Nations with economic instability
+   - Regions with weak mental health infrastructure
+
+4. Prevention Priorities:
+   - Target interventions during development transitions
+   - Address economic stressors and inequality
+   - Strengthen mental health systems
+   - Promote social cohesion and safety nets
