@@ -1,5 +1,5 @@
 Category,Country,HDI,Suicide Rate,GDP per Capita,Income Group,Continent
-"High HDI, Low Suicide",Hong Kong,0.955,4.41,"$43,748",High,Asia
-"High HDI, High Suicide",Guyana,0.776,31.26,"$9,889",Upper-Middle,America
-"Low HDI, High Suicide",Lesotho,0.55,20.57,$995,Low,Africa
+"High HDI, Low Suicide",Cyprus,0.913,4.04,"$29,124",High,Asia
+"High HDI, High Suicide",Ukraine,0.779,23.17,"$2,266",Lower-Middle,Europe
+"Low HDI, High Suicide",Central African Republic,0.414,11.64,$398,Low,Africa
 "Low HDI, Low Suicide",Niger,0.419,3.55,$535,Low,Africa

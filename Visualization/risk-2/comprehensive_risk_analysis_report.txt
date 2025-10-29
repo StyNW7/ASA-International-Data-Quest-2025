@@ -20,16 +20,16 @@ ECONOMIC & EMPLOYMENT FACTORS:
 - Stability: Economic instability impacts mental health
 
 TOP RISK FACTORS FOR SUICIDE RATES:
-1. Proportion of population pushed further below the $2.15 ($ 2017 PPP) poverty line by out-of-pocket health care expenditure (%): 0.965 (p=0.0000)
-2. Proportion of population pushed or further pushed below the $2.15 ($ 2017 PPP) poverty line by out-of-pocket health care expenditure (%): 0.919 (p=0.0000)
-3. Proportion of population pushed further below the $3.65 ($ 2017 PPP) poverty line by out-of-pocket health care expenditure (%): 0.783 (p=0.0000)
-4. Proportion of population pushed or further pushed below the $3.65 ($ 2017 PPP) poverty line by out-of-pocket health care expenditure (%): 0.712 (p=0.0000)
-5. Account ownership at a financial institution or with a mobile-money-service provider, female (% of population ages 15+): 0.590 (p=0.0000)
-6. Account ownership at a financial institution or with a mobile-money-service provider, poorest 40% (% of population ages 15+): 0.580 (p=0.0000)
-7. Account ownership at a financial institution or with a mobile-money-service provider, young adults (% of population ages 15-24): 0.578 (p=0.0000)
-8. Account ownership at a financial institution or with a mobile-money-service provider (% of population ages 15+): 0.576 (p=0.0000)
-9. Account ownership at a financial institution or with a mobile-money-service provider, secondary education or more (% of population ages 15+): 0.575 (p=0.0000)
-10. Account ownership at a financial institution or with a mobile-money-service provider, older adults (% of population ages 25+): 0.572 (p=0.0000)
+1. Suicide mortality rate (per 100,000 population): 0.957 (p=0.0000)
+2. Suicide mortality rate, male (per 100,000 male population): 0.955 (p=0.0000)
+3. Suicide mortality rate, female (per 100,000 female population): 0.818 (p=0.0000)
+4. Coverage of social insurance programs (% of population): 0.624 (p=0.0000)
+5. Coverage of social insurance programs in 4th quintile (% of population): 0.619 (p=0.0000)
+6. Coverage of social insurance programs in 3rd quintile (% of population): 0.619 (p=0.0000)
+7. Coverage of social insurance programs in 2nd quintile (% of population): 0.602 (p=0.0000)
+8. Hospital beds (per 1,000 people): 0.601 (p=0.0000)
+9. Adequacy of social protection and labor programs (% of total welfare of beneficiary households): 0.599 (p=0.0000)
+10. Coverage of social insurance programs in poorest quintile (% of population): 0.578 (p=0.0000)
 
 PREVENTION RECOMMENDATIONS:
 1. Integrate mental health services in education and employment programs

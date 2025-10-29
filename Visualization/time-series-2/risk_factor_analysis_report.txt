@@ -8,16 +8,16 @@ KEY FINDINGS:
    - Low HDI countries show resilience in some cases
 
 2. Top Correlated Risk Factors:
-   - Population ages 15-64 (% of total population): -0.074
-   - Urban population (% of total population): -0.072
-   - School enrollment, secondary (% gross): -0.044
-   - log_GDP_per_capita: -0.044
-   - HDI_growth: 0.034
-   - Life expectancy at birth, total (years): -0.033
-   - HDI: -0.025
-   - GDP_per_capita: -0.013
-   - Gini index: -0.009
-   - Suicide_change: 0.002
+   - Gini index: -0.371
+   - School enrollment, secondary (% gross): 0.324
+   - HDI: 0.232
+   - log_GDP_per_capita: 0.179
+   - GDP_per_capita: 0.106
+   - Life expectancy at birth, total (years): 0.096
+   - Urban population (% of total population): 0.081
+   - Population ages 15-64 (% of total population): 0.027
+   - HDI_growth: 0.006
+   - Suicide_change: nan
 
 3. High-Risk Groups Identified:
    - Countries undergoing rapid development transitions
