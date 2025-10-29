@@ -1,35 +1,34 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:           Suicide_rate   R-squared:                       0.017
-Model:                            OLS   Adj. R-squared:                  0.007
-Method:                 Least Squares   F-statistic:                     19.94
-Date:                Tue, 28 Oct 2025   Prob (F-statistic):           4.78e-40
-Time:                        22:35:23   Log-Likelihood:                -6056.0
-No. Observations:                1175   AIC:                         1.214e+04
-Df Residuals:                    1162   BIC:                         1.220e+04
-Df Model:                          12                                         
+Dep. Variable:           Suicide_rate   R-squared:                       0.278
+Model:                            OLS   Adj. R-squared:                  0.265
+Method:                 Least Squares   F-statistic:                     20.61
+Date:                Wed, 29 Oct 2025   Prob (F-statistic):           2.00e-35
+Time:                        23:13:59   Log-Likelihood:                -1721.2
+No. Observations:                 599   AIC:                             3466.
+Df Residuals:                     587   BIC:                             3519.
+Df Model:                          11                                         
 Covariance Type:                  HC1                                         
 ========================================================================================
                            coef    std err          z      P>|z|      [0.025      0.975]
 ----------------------------------------------------------------------------------------
-Intercept               75.8455     37.377      2.029      0.042       2.588     149.103
-Y_2019[T.True]          -1.8525      6.225     -0.298      0.766     -14.053      10.349
-Y_2020[T.True]          -1.6718      5.997     -0.279      0.780     -13.425      10.081
-Y_2021[T.True]          -5.8016      4.906     -1.183      0.237     -15.416       3.813
-Y_2022[T.True]          -6.3446      5.000     -1.269      0.204     -16.144       3.455
-Y_2023[T.True]          -7.2766      5.344     -1.362      0.173     -17.751       3.198
-cont_America[T.True]    -4.6706      2.376     -1.966      0.049      -9.327      -0.014
-cont_Asia[T.True]       -9.0677      3.629     -2.498      0.012     -16.181      -1.954
-cont_Europe[T.True]     -3.2625      3.816     -0.855      0.393     -10.741       4.216
-cont_Oceania[T.True]     0.7143      2.706      0.264      0.792      -4.589       6.018
-HDI_centered            58.7803     30.328      1.938      0.053      -0.661     118.222
-HDI_centered_sq         99.1534     70.872      1.399      0.162     -39.753     238.060
-log_GDP_per_capita      -6.8183      3.819     -1.785      0.074     -14.303       0.667
+Intercept               10.5918      2.400      4.413      0.000       5.887      15.296
+Y_2020[T.True]           0.1389      0.527      0.264      0.792      -0.894       1.172
+Y_2021[T.True]          -3.4202      0.733     -4.667      0.000      -4.856      -1.984
+Y_2022[T.True]           0.0791      0.525      0.151      0.880      -0.950       1.108
+Y_2023[T.True]          -0.0996      0.524     -0.190      0.849      -1.128       0.928
+cont_America[T.True]    -1.0597      0.558     -1.901      0.057      -2.153       0.033
+cont_Asia[T.True]       -1.6049      0.518     -3.101      0.002      -2.619      -0.590
+cont_Europe[T.True]      4.3311      0.928      4.668      0.000       2.513       6.150
+cont_Oceania[T.True]     5.7620      1.023      5.634      0.000       3.757       7.767
+HDI_centered             7.1556      3.280      2.182      0.029       0.727      13.584
+HDI_centered_sq          0.8060     11.128      0.072      0.942     -21.005      22.617
+log_GDP_per_capita      -0.3450      0.280     -1.231      0.218      -0.894       0.204
 ==============================================================================
-Omnibus:                     2559.343   Durbin-Watson:                   0.667
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):          6425839.139
-Skew:                          18.708   Prob(JB):                         0.00
-Kurtosis:                     363.349   Cond. No.                         466.
+Omnibus:                       37.684   Durbin-Watson:                   0.528
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               44.320
+Skew:                           0.594   Prob(JB):                     2.38e-10
+Kurtosis:                       3.604   Cond. No.                         537.
 ==============================================================================
 
 Notes:
