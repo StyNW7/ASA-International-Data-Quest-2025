@@ -1,0 +1,39 @@
+COMPREHENSIVE RISK FACTOR ANALYSIS REPORT
+======================================================================
+
+EXECUTIVE SUMMARY:
+This analysis identifies key risk factors affecting suicide rates, HDI, and GDP
+across social, economic, employment, and environmental dimensions.
+
+KEY FINDINGS BY CATEGORY:
+
+SOCIAL FACTORS:
+- Education: Higher enrollment correlates with lower suicide rates
+- Health: Better health outcomes strongly linked to higher HDI
+- Gender: Gender inequality impacts mental health outcomes
+- Environment: Environmental factors show complex relationships
+
+ECONOMIC & EMPLOYMENT FACTORS:
+- Unemployment: Strong positive correlation with suicide rates
+- Economic Structure: Service-based economies correlate with higher HDI
+- Inequality: Higher Gini index associated with increased suicide risk
+- Stability: Economic instability impacts mental health
+
+TOP RISK FACTORS FOR SUICIDE RATES:
+1. Proportion of population pushed further below the $2.15 ($ 2017 PPP) poverty line by out-of-pocket health care expenditure (%): 0.965 (p=0.0000)
+2. Proportion of population pushed or further pushed below the $2.15 ($ 2017 PPP) poverty line by out-of-pocket health care expenditure (%): 0.919 (p=0.0000)
+3. Proportion of population pushed further below the $3.65 ($ 2017 PPP) poverty line by out-of-pocket health care expenditure (%): 0.783 (p=0.0000)
+4. Proportion of population pushed or further pushed below the $3.65 ($ 2017 PPP) poverty line by out-of-pocket health care expenditure (%): 0.712 (p=0.0000)
+5. Account ownership at a financial institution or with a mobile-money-service provider, female (% of population ages 15+): 0.590 (p=0.0000)
+6. Account ownership at a financial institution or with a mobile-money-service provider, poorest 40% (% of population ages 15+): 0.580 (p=0.0000)
+7. Account ownership at a financial institution or with a mobile-money-service provider, young adults (% of population ages 15-24): 0.578 (p=0.0000)
+8. Account ownership at a financial institution or with a mobile-money-service provider (% of population ages 15+): 0.576 (p=0.0000)
+9. Account ownership at a financial institution or with a mobile-money-service provider, secondary education or more (% of population ages 15+): 0.575 (p=0.0000)
+10. Account ownership at a financial institution or with a mobile-money-service provider, older adults (% of population ages 25+): 0.572 (p=0.0000)
+
+PREVENTION RECOMMENDATIONS:
+1. Integrate mental health services in education and employment programs
+2. Address economic inequality through targeted social policies
+3. Implement gender-sensitive mental health interventions
+4. Strengthen social safety nets during economic transitions
+5. Promote environmental sustainability for community well-being
