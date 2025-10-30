@@ -1,6 +1,3 @@
-# app.py
-# Streamlit dashboard: "The Price of Progress"
-# Updated for final_dataset.csv structure
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -18,7 +15,7 @@ from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 # Page configuration
 st.set_page_config(
-    page_title="The Price of Progress", 
+    page_title="The Paradox of Progress", 
     layout="wide", 
     initial_sidebar_state="expanded",
     page_icon="📊"
@@ -295,7 +292,7 @@ st.sidebar.markdown(f"**HDI Range:** {df_f['HDI'].min():.3f} - {df_f['HDI'].max(
 # -----------------------
 # Main Content
 # -----------------------
-st.markdown('<h1 class="main-header">The Price of Progress</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">The Paradox of Progress</h1>', unsafe_allow_html=True)
 st.markdown("""
 Exploring the complex relationships between human development, economic growth, and suicide rates across countries. 
 Use the sidebar to filter data by year, continent, income group, data quality, or HDI range.
@@ -872,7 +869,7 @@ with col2:
         with st.spinner("Generating comprehensive report..."):
             report_lines = []
             report_lines.append("=" * 60)
-            report_lines.append("THE PRICE OF PROGRESS - ANALYSIS REPORT")
+            report_lines.append("THE PARADOX OF PROGRESS - ANALYSIS REPORT")
             report_lines.append("=" * 60)
             report_lines.append(f"Generated: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}")
             report_lines.append(f"Dataset: {len(df_analysis)} countries (filtered)")
