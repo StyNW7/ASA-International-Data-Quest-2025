@@ -1,6 +1,6 @@
 # app.py
 # Streamlit dashboard: "The Price of Progress"
-# Enhanced version with better UI, error handling, and features
+# Updated for final_dataset.csv structure
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -65,14 +65,13 @@ def load_data(path=None):
             st.sidebar.error(f"❌ Error loading uploaded file: {e}")
             return None
     else:
-        # If user doesn't supply file, fallback to try local Output path
+        # Load the new dataset structure
         try:
-            # df = pd.read_csv("./Output/merged_clean_panel.csv")
             df = pd.read_csv("./Final/final_dataset.csv")
             st.sidebar.success(f"✅ Local data loaded: {len(df)} rows")
             return df
-        except Exception:
-            st.sidebar.error("❌ No dataset found locally.")
+        except Exception as e:
+            st.sidebar.error(f"❌ Error loading local dataset: {e}")
             return None
 
 def safe_numeric(df, cols):
@@ -91,8 +90,8 @@ def safe_numeric(df, cols):
     return df
 
 def fit_quadratic(df, robust=True):
-    """Fit Suicide_rate ~ HDI_2023 + HDI_sq + log_GDP_per_capita with enhanced error handling"""
-    required_cols = ['Suicide_rate', 'HDI_2023', 'HDI_sq']
+    """Fit Suicide_rate ~ HDI + HDI_sq + log_GDP_per_capita with enhanced error handling"""
+    required_cols = ['Suicide_rate', 'HDI', 'HDI_sq']
     missing_cols = [col for col in required_cols if col not in df.columns]
     
     if missing_cols:
@@ -109,7 +108,7 @@ def fit_quadratic(df, robust=True):
     if 'log_GDP_per_capita' not in dfm.columns and 'GDP_per_capita' in dfm.columns:
         dfm['log_GDP_per_capita'] = np.log(dfm['GDP_per_capita'].where(dfm['GDP_per_capita'] > 1, np.nan))
     
-    formula = "Suicide_rate ~ HDI_2023 + HDI_sq + log_GDP_per_capita"
+    formula = "Suicide_rate ~ HDI + HDI_sq + log_GDP_per_capita"
     
     try:
         model = smf.ols(formula=formula, data=dfm).fit(cov_type='HC1' if robust else None)
@@ -122,8 +121,8 @@ def tipping_point_from_model(model):
     """Calculate tipping point with validation"""
     try:
         p = model.params
-        if 'HDI_2023' in p and 'HDI_sq' in p and p['HDI_sq'] != 0:
-            tp = -p['HDI_2023']/(2*p['HDI_sq'])
+        if 'HDI' in p and 'HDI_sq' in p and p['HDI_sq'] != 0:
+            tp = -p['HDI']/(2*p['HDI_sq'])
             # Validate tipping point is within reasonable HDI range
             if 0.3 <= tp <= 1.0:
                 return float(tp)
@@ -153,11 +152,23 @@ def create_summary_statistics(df_f):
     """Create comprehensive summary statistics"""
     stats_data = {
         'Statistic': ['Count', 'Mean', 'Std Dev', 'Min', '25%', '50%', '75%', 'Max'],
-        'HDI': df_f['HDI_2023'].describe().round(3).tolist(),
+        'HDI': df_f['HDI'].describe().round(3).tolist(),
         'Suicide Rate': df_f['Suicide_rate'].describe().round(2).tolist(),
         'GDP per capita': df_f['GDP_per_capita'].describe().round(0).tolist()
     }
     return pd.DataFrame(stats_data)
+
+def prepare_data_for_analysis(df_f):
+    """Prepare the dataset for analysis with the new structure"""
+    # Use the latest year for cross-sectional analysis
+    if 'Year' in df_f.columns:
+        latest_year = df_f['Year'].max()
+        df_analysis = df_f[df_f['Year'] == latest_year].copy()
+        st.sidebar.info(f"Using latest year: {latest_year} ({len(df_analysis)} countries)")
+    else:
+        df_analysis = df_f.copy()
+    
+    return df_analysis
 
 # -----------------------
 # Sidebar: Data / Filters
@@ -167,7 +178,7 @@ st.sidebar.markdown("---")
 
 # Data upload
 uploaded = st.sidebar.file_uploader(
-    "Upload cleaned CSV (merged_clean_panel.csv)", 
+    "Upload final_dataset.csv", 
     type=["csv"],
     help="Upload your dataset or use the default one"
 )
@@ -177,13 +188,13 @@ df = load_data(uploaded)
 if df is None:
     st.sidebar.error("""
     No dataset found. Please:
-    1. Upload `merged_clean_panel.csv` above, OR
-    2. Place it at `./Output/merged_clean_panel.csv`
+    1. Upload `final_dataset.csv` above, OR
+    2. Place it at `./Final/final_dataset.csv`
     """)
     st.stop()
 
 # Ensure key numeric columns
-numeric_cols = ['HDI_2023', 'HDI_sq', 'GDP_per_capita', 'log_GDP_per_capita', 'Suicide_rate', 'coverage_frac']
+numeric_cols = ['HDI', 'HDI_sq', 'GDP_per_capita', 'log_GDP_per_capita', 'Suicide_rate']
 df = safe_numeric(df, numeric_cols)
 
 # Compute log GDP if missing
@@ -197,8 +208,19 @@ st.sidebar.subheader("🎯 Data Filters")
 continents = sorted(df['continent'].dropna().unique()) if 'continent' in df.columns else []
 income_groups = sorted(df['income_group_auto'].dropna().unique()) if 'income_group_auto' in df.columns else []
 data_quality_opts = sorted(df['Low_data_quality_flag'].dropna().unique()) if 'Low_data_quality_flag' in df.columns else []
+years = sorted(df['Year'].dropna().unique()) if 'Year' in df.columns else []
 
 # Filter widgets
+if years:
+    selected_year = st.sidebar.selectbox(
+        "Select Year for Analysis",
+        options=years,
+        index=len(years)-1,  # Default to latest year
+        help="Select the year for cross-sectional analysis"
+    )
+else:
+    selected_year = None
+
 if continents:
     sel_continent = st.sidebar.multiselect(
         "Continent", 
@@ -230,12 +252,12 @@ else:
     sel_quality = []
 
 # HDI range filter
-if 'HDI_2023' in df.columns:
+if 'HDI' in df.columns:
     min_hdi, max_hdi = st.sidebar.slider(
         "HDI Range",
-        min_value=float(df['HDI_2023'].min()),
-        max_value=float(df['HDI_2023'].max()),
-        value=(float(df['HDI_2023'].min()), float(df['HDI_2023'].max())),
+        min_value=float(df['HDI'].min()),
+        max_value=float(df['HDI'].max()),
+        value=(float(df['HDI'].min()), float(df['HDI'].max())),
         step=0.01,
         help="Filter countries by HDI range"
     )
@@ -245,23 +267,30 @@ else:
 # Apply filters
 mask = pd.Series(True, index=df.index)
 
+if years and selected_year:
+    mask &= df['Year'] == selected_year
 if continents:
     mask &= df['continent'].isin(sel_continent)
 if income_groups:
     mask &= df['income_group_auto'].isin(sel_income)
 if data_quality_opts:
     mask &= df['Low_data_quality_flag'].isin(sel_quality)
-if 'HDI_2023' in df.columns:
-    mask &= (df['HDI_2023'] >= min_hdi) & (df['HDI_2023'] <= max_hdi)
+if 'HDI' in df.columns:
+    mask &= (df['HDI'] >= min_hdi) & (df['HDI'] <= max_hdi)
 
 df_f = df[mask].copy()
+
+# Prepare data for analysis
+df_analysis = prepare_data_for_analysis(df_f)
 
 # Display filter summary
 st.sidebar.markdown("---")
 st.sidebar.subheader("📊 Filter Summary")
 st.sidebar.markdown(f"**Countries:** {df_f['Country Name'].nunique()}")
 st.sidebar.markdown(f"**Observations:** {len(df_f)}")
-st.sidebar.markdown(f"**HDI Range:** {df_f['HDI_2023'].min():.3f} - {df_f['HDI_2023'].max():.3f}")
+if 'Year' in df_f.columns:
+    st.sidebar.markdown(f"**Years:** {df_f['Year'].min()} - {df_f['Year'].max()}")
+st.sidebar.markdown(f"**HDI Range:** {df_f['HDI'].min():.3f} - {df_f['HDI'].max():.3f}")
 
 # -----------------------
 # Main Content
@@ -269,7 +298,7 @@ st.sidebar.markdown(f"**HDI Range:** {df_f['HDI_2023'].min():.3f} - {df_f['HDI_2
 st.markdown('<h1 class="main-header">The Price of Progress</h1>', unsafe_allow_html=True)
 st.markdown("""
 Exploring the complex relationships between human development, economic growth, and suicide rates across countries. 
-Use the sidebar to filter data by continent, income group, data quality, or HDI range.
+Use the sidebar to filter data by year, continent, income group, data quality, or HDI range.
 """)
 
 # Key metrics with enhanced styling
@@ -277,26 +306,25 @@ st.markdown("### 📈 Overview Metrics")
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.markdown('<div class="metric-card">', unsafe_allow_html=True)
-    st.metric("Countries", f"{df_f['Country Name'].nunique()}")
+    # st.markdown('<div class="metric-card">', unsafe_allow_html=True)
+    st.metric("Countries", f"{df_analysis['Country Name'].nunique()}")
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
-    st.markdown('<div class="metric-card">', unsafe_allow_html=True)
-    avg_hdi = df_f['HDI_2023'].mean()
-    st.metric("Average HDI", f"{avg_hdi:.3f}", 
-              delta=f"{(avg_hdi - df['HDI_2023'].mean()):.3f} vs full dataset" if len(df_f) != len(df) else None)
+    # st.markdown('<div class="metric-card">', unsafe_allow_html=True)
+    avg_hdi = df_analysis['HDI'].mean()
+    st.metric("Average HDI", f"{avg_hdi:.3f}")
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col3:
-    st.markdown('<div class="metric-card">', unsafe_allow_html=True)
-    suicide_rate = df_f['Suicide_rate'].mean()
+    # st.markdown('<div class="metric-card">', unsafe_allow_html=True)
+    suicide_rate = df_analysis['Suicide_rate'].mean()
     st.metric("Avg Suicide Rate", f"{suicide_rate:.2f} per 100k")
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col4:
-    st.markdown('<div class="metric-card">', unsafe_allow_html=True)
-    median_gdp = df_f['GDP_per_capita'].median()
+    # st.markdown('<div class="metric-card">', unsafe_allow_html=True)
+    median_gdp = df_analysis['GDP_per_capita'].median()
     st.metric("Median GDP/capita", f"${median_gdp:,.0f}")
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -310,32 +338,32 @@ tab1, tab2, tab3 = st.tabs(["Summary Statistics", "Data Sample", "Missing Data"]
 
 with tab1:
     st.subheader("Descriptive Statistics")
-    stats_df = create_summary_statistics(df_f)
+    stats_df = create_summary_statistics(df_analysis)
     st.dataframe(stats_df, use_container_width=True)
     
     # Additional insights
     col1, col2, col3 = st.columns(3)
     with col1:
-        hdi_corr = df_f[['HDI_2023', 'Suicide_rate']].corr().iloc[0,1]
+        hdi_corr = df_analysis[['HDI', 'Suicide_rate']].corr().iloc[0,1]
         st.metric("HDI-Suicide Correlation", f"{hdi_corr:.3f}")
     
     with col2:
-        gdp_corr = df_f[['GDP_per_capita', 'Suicide_rate']].corr().iloc[0,1]
+        gdp_corr = df_analysis[['GDP_per_capita', 'Suicide_rate']].corr().iloc[0,1]
         st.metric("GDP-Suicide Correlation", f"{gdp_corr:.3f}")
     
     with col3:
-        complete_cases = df_f[['HDI_2023', 'Suicide_rate', 'GDP_per_capita']].notna().all(axis=1).sum()
+        complete_cases = df_analysis[['HDI', 'Suicide_rate', 'GDP_per_capita']].notna().all(axis=1).sum()
         st.metric("Complete Cases", f"{complete_cases}")
 
 with tab2:
     st.subheader("Data Sample")
-    st.dataframe(df_f.head(10), use_container_width=True)
-    st.info(f"Showing 10 of {len(df_f)} rows. Dataset has {len(df_f.columns)} columns.")
+    st.dataframe(df_analysis.head(10), use_container_width=True)
+    st.info(f"Showing 10 of {len(df_analysis)} rows. Dataset has {len(df_analysis.columns)} columns.")
 
 with tab3:
     st.subheader("Missing Data Analysis")
-    missing_data = df_f.isnull().sum()
-    missing_pct = (missing_data / len(df_f)) * 100
+    missing_data = df_analysis.isnull().sum()
+    missing_pct = (missing_data / len(df_analysis)) * 100
     missing_df = pd.DataFrame({
         'Column': missing_data.index,
         'Missing Count': missing_data.values,
@@ -363,13 +391,13 @@ st.markdown('<h2 class="section-header">🔍 Correlation Analysis</h2>', unsafe_
 # Select variables for correlation
 corr_vars = st.multiselect(
     "Select variables for correlation analysis:",
-    options=[col for col in df_f.columns if df_f[col].dtype in ['float64', 'int64']],
-    default=['HDI_2023', 'GDP_per_capita', 'Suicide_rate', 'log_GDP_per_capita'],
+    options=[col for col in df_analysis.columns if df_analysis[col].dtype in ['float64', 'int64']],
+    default=['HDI', 'GDP_per_capita', 'Suicide_rate', 'log_GDP_per_capita'],
     help="Choose numerical variables to include in correlation analysis"
 )
 
 if len(corr_vars) >= 2:
-    corr_data = df_f[corr_vars].corr(method='pearson')
+    corr_data = df_analysis[corr_vars].corr(method='pearson')
     
     col1, col2 = st.columns([2, 1])
     
@@ -429,27 +457,27 @@ col1, col2 = st.columns([3, 1])
 with col1:
     # Enhanced scatter plot
     fig_scatter = px.scatter(
-        df_f, 
-        x='HDI_2023', 
+        df_analysis, 
+        x='HDI', 
         y='Suicide_rate',
-        color='continent' if 'continent' in df_f.columns else None,
-        size='GDP_per_capita' if 'GDP_per_capita' in df_f.columns else None,
+        color='continent' if 'continent' in df_analysis.columns else None,
+        size='GDP_per_capita' if 'GDP_per_capita' in df_analysis.columns else None,
         hover_name='Country Name',
-        hover_data=['GDP_per_capita', 'income_group_auto'] if 'income_group_auto' in df_f.columns else ['GDP_per_capita'],
+        hover_data=['GDP_per_capita', 'income_group_auto'] if 'income_group_auto' in df_analysis.columns else ['GDP_per_capita'],
         title="HDI vs Suicide Rate by Country",
         size_max=15,
         opacity=0.7
     )
     
     # Fit and add quadratic trend
-    model, model_df = fit_quadratic(df_f)
+    model, model_df = fit_quadratic(df_analysis)
     if model is not None:
-        hdi_range = np.linspace(df_f['HDI_2023'].min(), df_f['HDI_2023'].max(), 100)
+        hdi_range = np.linspace(df_analysis['HDI'].min(), df_analysis['HDI'].max(), 100)
         params = model.params
         gdp_mean = model_df['log_GDP_per_capita'].mean() if 'log_GDP_per_capita' in model_df else 0
         
         y_pred = (params.get('Intercept', 0) + 
-                 params.get('HDI_2023', 0) * hdi_range + 
+                 params.get('HDI', 0) * hdi_range + 
                  params.get('HDI_sq', 0) * (hdi_range ** 2) + 
                  params.get('log_GDP_per_capita', 0) * gdp_mean)
         
@@ -467,11 +495,11 @@ with col1:
     st.plotly_chart(fig_scatter, use_container_width=True)
     
     # Correlation metrics
-    if 'HDI_2023' in df_f.columns and 'Suicide_rate' in df_f.columns:
-        clean_data = df_f[['HDI_2023', 'Suicide_rate']].dropna()
+    if 'HDI' in df_analysis.columns and 'Suicide_rate' in df_analysis.columns:
+        clean_data = df_analysis[['HDI', 'Suicide_rate']].dropna()
         if len(clean_data) > 2:
-            pearson_r, pearson_p = pearsonr(clean_data['HDI_2023'], clean_data['Suicide_rate'])
-            spearman_r, spearman_p = spearmanr(clean_data['HDI_2023'], clean_data['Suicide_rate'])
+            pearson_r, pearson_p = pearsonr(clean_data['HDI'], clean_data['Suicide_rate'])
+            spearman_r, spearman_p = spearmanr(clean_data['HDI'], clean_data['Suicide_rate'])
             
             col_a, col_b = st.columns(2)
             with col_a:
@@ -489,7 +517,7 @@ with col2:
         st.success("✅ Quadratic Model Fitted")
         
         # Key coefficients
-        st.metric("HDI Coefficient", f"{model.params.get('HDI_2023', 0):.3f}")
+        st.metric("HDI Coefficient", f"{model.params.get('HDI', 0):.3f}")
         st.metric("HDI² Coefficient", f"{model.params.get('HDI_sq', 0):.3f}")
         st.metric("R-squared", f"{model.rsquared:.3f}")
         
@@ -549,14 +577,14 @@ with tab1:
         x_col = 'GDP_per_capita'
         x_title = "GDP per Capita (USD)"
     
-    if x_col in df_f.columns:
+    if x_col in df_analysis.columns:
         fig_gdp = px.scatter(
-            df_f, 
+            df_analysis, 
             x=x_col, 
             y='Suicide_rate',
-            color='continent' if 'continent' in df_f.columns else None,
+            color='continent' if 'continent' in df_analysis.columns else None,
             hover_name='Country Name',
-            hover_data=['HDI_2023', 'income_group_auto'] if 'income_group_auto' in df_f.columns else ['HDI_2023'],
+            hover_data=['HDI', 'income_group_auto'] if 'income_group_auto' in df_analysis.columns else ['HDI'],
             title=f"Suicide Rate vs {x_title}",
             trendline="lowess",
             trendline_color_override="red"
@@ -565,7 +593,7 @@ with tab1:
         st.plotly_chart(fig_gdp, use_container_width=True)
         
         # GDP correlation
-        gdp_corr_data = df_f[[x_col, 'Suicide_rate']].dropna()
+        gdp_corr_data = df_analysis[[x_col, 'Suicide_rate']].dropna()
         if len(gdp_corr_data) > 2:
             gdp_r, gdp_p = pearsonr(gdp_corr_data[x_col], gdp_corr_data['Suicide_rate'])
             st.metric(f"Correlation with {x_title}", f"{gdp_r:.3f}", delta=f"p-value: {gdp_p:.4f}")
@@ -573,13 +601,13 @@ with tab1:
 with tab2:
     st.subheader("Suicide Rate by Income Group")
     
-    if 'income_group_auto' in df_f.columns:
+    if 'income_group_auto' in df_analysis.columns:
         # Box plot
         income_order = ['Low', 'Lower-Middle', 'Upper-Middle', 'High']
-        available_groups = [group for group in income_order if group in df_f['income_group_auto'].unique()]
+        available_groups = [group for group in income_order if group in df_analysis['income_group_auto'].unique()]
         
         fig_income = px.box(
-            df_f, 
+            df_analysis, 
             x='income_group_auto', 
             y='Suicide_rate',
             category_orders={"income_group_auto": available_groups},
@@ -590,9 +618,9 @@ with tab2:
         st.plotly_chart(fig_income, use_container_width=True)
         
         # Summary statistics by income group
-        income_stats = df_f.groupby('income_group_auto').agg({
+        income_stats = df_analysis.groupby('income_group_auto').agg({
             'Suicide_rate': ['mean', 'median', 'std', 'count'],
-            'HDI_2023': 'mean',
+            'HDI': 'mean',
             'GDP_per_capita': 'median'
         }).round(3)
         
@@ -605,10 +633,10 @@ with tab3:
     st.subheader("Development Trajectories")
     
     # Scatter plot with both HDI and GDP
-    if all(col in df_f.columns for col in ['HDI_2023', 'GDP_per_capita', 'Suicide_rate']):
+    if all(col in df_analysis.columns for col in ['HDI', 'GDP_per_capita', 'Suicide_rate']):
         fig_development = px.scatter(
-            df_f,
-            x='HDI_2023',
+            df_analysis,
+            x='HDI',
             y='GDP_per_capita',
             size='Suicide_rate',
             color='Suicide_rate',
@@ -634,17 +662,17 @@ with tab3:
 st.markdown("---")
 st.markdown('<h2 class="section-header">🌍 Geographic Analysis</h2>', unsafe_allow_html=True)
 
-if 'ISO3' in df_f.columns:
+if 'ISO3' in df_analysis.columns:
     # Map visualization
     col1, col2 = st.columns([3, 1])
     
     with col1:
         map_variable = st.selectbox(
             "Select variable for map:",
-            options=['Suicide_rate', 'HDI_2023', 'GDP_per_capita'],
+            options=['Suicide_rate', 'HDI', 'GDP_per_capita'],
             format_func=lambda x: {
                 'Suicide_rate': 'Suicide Rate',
-                'HDI_2023': 'Human Development Index',
+                'HDI': 'Human Development Index',
                 'GDP_per_capita': 'GDP per Capita'
             }[x]
         )
@@ -656,11 +684,11 @@ if 'ISO3' in df_f.columns:
         )
         
         fig_map = px.choropleth(
-            df_f,
+            df_analysis,
             locations="ISO3",
             color=map_variable,
             hover_name="Country Name",
-            hover_data=['HDI_2023', 'GDP_per_capita', 'income_group_auto'] if 'income_group_auto' in df_f.columns else ['HDI_2023', 'GDP_per_capita'],
+            hover_data=['HDI', 'GDP_per_capita', 'income_group_auto'] if 'income_group_auto' in df_analysis.columns else ['HDI', 'GDP_per_capita'],
             color_continuous_scale=color_scale,
             title=f"Global Distribution of {map_variable.replace('_', ' ').title()}"
         )
@@ -670,10 +698,10 @@ if 'ISO3' in df_f.columns:
     with col2:
         st.subheader("Regional Summary")
         
-        if 'continent' in df_f.columns:
-            continent_stats = df_f.groupby('continent').agg({
+        if 'continent' in df_analysis.columns:
+            continent_stats = df_analysis.groupby('continent').agg({
                 'Suicide_rate': 'mean',
-                'HDI_2023': 'mean',
+                'HDI': 'mean',
                 'GDP_per_capita': 'median',
                 'Country Name': 'count'
             }).round(3).rename(columns={'Country Name': 'Count'})
@@ -682,8 +710,8 @@ if 'ISO3' in df_f.columns:
             
             # Top countries by suicide rate
             st.subheader("Extreme Values")
-            top_suicide = df_f.nlargest(5, 'Suicide_rate')[['Country Name', 'Suicide_rate', 'HDI_2023']]
-            bottom_suicide = df_f.nsmallest(5, 'Suicide_rate')[['Country Name', 'Suicide_rate', 'HDI_2023']]
+            top_suicide = df_analysis.nlargest(5, 'Suicide_rate')[['Country Name', 'Suicide_rate', 'HDI']]
+            bottom_suicide = df_analysis.nsmallest(5, 'Suicide_rate')[['Country Name', 'Suicide_rate', 'HDI']]
             
             st.write("**Highest Suicide Rates:**")
             st.dataframe(top_suicide)
@@ -716,11 +744,11 @@ with col1:
     
     try:
         # Compute VIF for key variables
-        vif_vars = ['HDI_2023', 'HDI_sq', 'log_GDP_per_capita']
-        available_vars = [var for var in vif_vars if var in df_f.columns]
+        vif_vars = ['HDI', 'HDI_sq', 'log_GDP_per_capita']
+        available_vars = [var for var in vif_vars if var in df_analysis.columns]
         
         if len(available_vars) >= 2:
-            X = df_f[available_vars].dropna()
+            X = df_analysis[available_vars].dropna()
             if len(X) > 0:
                 Xc = sm.add_constant(X)
                 vif_vals = []
@@ -738,7 +766,7 @@ with col1:
                     "VIF": vif_vals
                 })
                 
-                # Remove constant for display
+                # Remove constant for display - FIXED: changed vif_display to vif_df
                 vif_display = vif_df[vif_df['Variable'] != 'const'].copy()
                 vif_display['Status'] = vif_display['VIF'].apply(
                     lambda x: '✅ Low' if x < 5 else '⚠️ Moderate' if x < 10 else '❌ High'
@@ -818,7 +846,7 @@ with col1:
     st.subheader("Data Export")
     
     # Filtered data download
-    csv_data = df_f.to_csv(index=False).encode('utf-8')
+    csv_data = df_analysis.to_csv(index=False).encode('utf-8')
     st.download_button(
         "📥 Download Filtered CSV",
         data=csv_data,
@@ -828,7 +856,7 @@ with col1:
     )
     
     # Summary statistics download
-    summary_csv = create_summary_statistics(df_f).to_csv(index=False).encode('utf-8')
+    summary_csv = create_summary_statistics(df_analysis).to_csv(index=False).encode('utf-8')
     st.download_button(
         "📊 Download Summary Statistics",
         data=summary_csv,
@@ -847,11 +875,15 @@ with col2:
             report_lines.append("THE PRICE OF PROGRESS - ANALYSIS REPORT")
             report_lines.append("=" * 60)
             report_lines.append(f"Generated: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}")
-            report_lines.append(f"Dataset: {len(df_f)} countries (filtered from {len(df)} total)")
+            report_lines.append(f"Dataset: {len(df_analysis)} countries (filtered)")
+            if selected_year:
+                report_lines.append(f"Analysis Year: {selected_year}")
             report_lines.append("")
             
             # Filters applied
             report_lines.append("FILTERS APPLIED:")
+            if selected_year:
+                report_lines.append(f"  Year: {selected_year}")
             report_lines.append(f"  Continents: {sel_continent}")
             report_lines.append(f"  Income Groups: {sel_income}")
             report_lines.append(f"  Data Quality: {sel_quality}")
@@ -860,9 +892,9 @@ with col2:
             
             # Key statistics
             report_lines.append("KEY STATISTICS:")
-            report_lines.append(f"  Average HDI: {df_f['HDI_2023'].mean():.3f}")
-            report_lines.append(f"  Average Suicide Rate: {df_f['Suicide_rate'].mean():.2f} per 100k")
-            report_lines.append(f"  Median GDP per capita: ${df_f['GDP_per_capita'].median():,.0f}")
+            report_lines.append(f"  Average HDI: {df_analysis['HDI'].mean():.3f}")
+            report_lines.append(f"  Average Suicide Rate: {df_analysis['Suicide_rate'].mean():.2f} per 100k")
+            report_lines.append(f"  Median GDP per capita: ${df_analysis['GDP_per_capita'].median():,.0f}")
             report_lines.append("")
             
             # Model results
@@ -921,7 +953,7 @@ st.markdown("""
 # Session info (hidden by default)
 # -----------------------
 with st.sidebar.expander("Session Information"):
-    st.write(f"**Data shape:** {df_f.shape}")
-    st.write(f"**Memory usage:** {df_f.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
-    st.write(f"**Columns:** {len(df_f.columns)}")
-    st.write(f"**Complete cases:** {df_f.notna().all(axis=1).sum()}")
+    st.write(f"**Data shape:** {df_analysis.shape}")
+    st.write(f"**Memory usage:** {df_analysis.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
+    st.write(f"**Columns:** {len(df_analysis.columns)}")
+    st.write(f"**Complete cases:** {df_analysis.notna().all(axis=1).sum()}")
