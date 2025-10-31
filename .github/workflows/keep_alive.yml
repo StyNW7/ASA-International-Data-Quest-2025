@@ -2,7 +2,7 @@ name: Keep Streamlit Awake
 
 on:
   schedule:
-    - cron: "*/45 * * * *" 
+    - cron: "*/5 * * * *" # setiap 45 menit
   workflow_dispatch:
 
 jobs:
@@ -10,8 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Ping Streamlit app
+      - name: Keep Streamlit App Awake
         run: |
           echo "🏓 Pinging Streamlit app to keep it awake..."
-          curl -s -o /dev/null -w "%{http_code}" -L https://the-paradox-of-progress.streamlit.app
-          echo "✅ Ping done at $(date)"
+          
+          # gunakan -f untuk fail silently, -k untuk lewati SSL verify, --retry agar stabil
+          response=$(curl -s -o /dev/null -w "%{http_code}" -L -k --retry 3 https://the-paradox-of-progress.streamlit.app)
+          
+          if [ "$response" -eq 200 ]; then
+            echo "✅ App responded successfully (HTTP 200)"
+          else
+            echo "⚠️ App did not respond as expected (HTTP $response)"
+          fi
+          
+          echo "🕒 Ping completed at $(date)"
