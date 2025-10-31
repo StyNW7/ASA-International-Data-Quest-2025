@@ -2,7 +2,7 @@ name: Keep Streamlit Awake
 
 on:
   schedule:
-    - cron: "*/5 * * * *" # setiap 45 menit
+    - cron: "*/45 * * * *" # setiap 45 menit
   workflow_dispatch:
 
 jobs:
